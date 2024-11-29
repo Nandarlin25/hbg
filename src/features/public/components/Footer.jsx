@@ -4,7 +4,7 @@ import Container from "../../../components/Container";
 const Footer = () => {
   return (
    
-<footer className="bg-stone-900 text-gray-400 py-8 mt-auto">
+<footer className="bg-zinc-800 text-gray-400 py-8 mt-auto">
    <Container>
    <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
     {/* Brand Section */}
@@ -47,19 +47,19 @@ const Footer = () => {
       </div>
       <h3 className="text-white text-lg font-semibold mt-6">Follow Us</h3>
       <div className="mt-4 flex space-x-4">
-        <div className="bg-black size-10 flex justify-center items-center rounded-lg">
+        <div className="bg-zinc-950 size-10 flex justify-center items-center rounded-lg">
         <a href="#" className="hover:text-white"><i class="fa-brands fa-facebook-f text text-white text-lg"></i></a>
         </div>
 
-        <div className="bg-black size-10 flex justify-center items-center rounded-lg ">
+        <div className="bg-zinc-950 size-10 flex justify-center items-center rounded-lg ">
         <a href="#" className="hover:text-white"><i class="fa-brands fa-instagram text text-white text-lg"></i></a>
         </div>
 
-        <div className="bg-black size-10 flex justify-center items-center rounded-lg">
+        <div className="bg-zinc-950 size-10 flex justify-center items-center rounded-lg">
         <a href="#" className="hover:text-white"><i class="fa-brands fa-twitter text text-white text-lg"></i></a>
         </div>
         
-        <div className="bg-black size-10 flex justify-center items-center rounded-lg">
+        <div className="bg-zinc-950 size-10 flex justify-center items-center rounded-lg">
         <a href="#" className="hover:text-white"><i class="fa-brands fa-linkedin-in text text-white text-lg"></i></a>
         </div>
       </div>
