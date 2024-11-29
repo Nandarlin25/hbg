@@ -6,8 +6,8 @@ const useHeaderNavStore = create((set) => ({
     { path: "/rooms", label: "Rooms", isActive: false },
     { path: "/about-us", label: "About Us", isActive: false },
     { path: "/services", label: "Services", isActive: false },
-    { path: "/contact-us", label: "Contact Us", isActive: false },
     { path: "/blog", label: "Blog", isActive: false },
+    { path: "/contact-us", label: "Contact Us", isActive: false },
   ],
   activeLink: (pathLink) =>
     set((state) => ({

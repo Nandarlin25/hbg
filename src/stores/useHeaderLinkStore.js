@@ -37,14 +37,14 @@ export const useHeaderLinkStore = create(() => ({
       title: "Service",
     },
     {
-      path: "/contact-us",
-      bgimage: contactushero,
-      title: "Contact Us",
-    },
-    {
       path: "/blog",
       bgimage: bloghero,
       title: "Blog",
+    },
+    {
+      path: "/contact-us",
+      bgimage: contactushero,
+      title: "Contact Us",
     },
     {
       path: "/booking",
