@@ -26,3 +26,13 @@
     transform: translateX(100%) scaleX(0.5);
   }
 }
+
+/* .custom-bg {
+  background-: url('https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?cs=srgb&dl=pexels-souvenirpixels-414612.jpg&fm=jpg');
+  background-size: cover;
+  background-position: center;
+  height: 50vh; /* Full screen height */
+  /* opacity: 0.7; */
+
+  /* }   */
+
