@@ -7,7 +7,7 @@ const ContactUsPage = () => {
   return (
     <>
     <Container>
-      <BreadCrumb currentPageTitle={"Contact Us"} />
+      {/* <BreadCrumb currentPageTitle={"Contact Us"} /> */}
       <ContactUs/>
     </Container>
     </>

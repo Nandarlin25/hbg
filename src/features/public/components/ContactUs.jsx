@@ -3,14 +3,15 @@ import { GoLocation } from 'react-icons/go';
 import { PiCallBell } from 'react-icons/pi';
 import { TbWorld } from 'react-icons/tb';
 import { Link } from 'react-router-dom';
+import ContactForm from './ContactForm';
 
 
 const ContactUs = () => {
   return (
     <div className="bg-white text-black py-16">
-      <div className="container mx-auto px-6 lg:px-20 space-y-16">
+      <div className=" mx-auto px-6 lg:px-20 space-y-16">
         {/* Location and Contact Info Section */}
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-2 gap-6">
           {/* Google Map */}
           <div>
             <h4 className="text-bold font-semibold font-heading mb-6 text-primary text-3xl">
@@ -79,18 +80,31 @@ const ContactUs = () => {
                       Stay in touch and follow us on social media:
                     </p>
                     <div className="flex space-x-4 mt-2">
-                      <Link href="#" className="text-primary ">
-                        <i className="fab fa-facebook"></i>
-                      </Link>
-                      <Link href="#" className="text-primary">
-                        <i className="fab fa-twitter size-6"></i>
-                      </Link>
-                      <Link href="#" className="text-primary">
-                        <i className="fab fa-instagram"></i>
-                      </Link>
-                      <Link href="#" className="text-primary">
-                        <i className="fab fa-youtube"></i>
-                      </Link>
+                      <div className="mt-4 flex space-x-4">
+                        <div className="bg-zinc-950 size-10 flex justify-center items-center rounded-lg">
+                          <Link to="#" className="hover:text-white">
+                            <i class="fa-brands fa-facebook-f text text-white text-lg"></i>
+                          </Link>
+                        </div>
+
+                        <div className="bg-zinc-950 size-10 flex justify-center items-center rounded-lg ">
+                          <Link to="#" className="hover:text-white">
+                            <i class="fa-brands fa-instagram text text-white text-lg"></i>
+                          </Link>
+                        </div>
+
+                        <div className="bg-zinc-950 size-10 flex justify-center items-center rounded-lg">
+                          <Link to="#" className="hover:text-white">
+                            <i class="fa-brands fa-twitter text text-white text-lg"></i>
+                          </Link>
+                        </div>
+
+                        <div className="bg-zinc-950 size-10 flex justify-center items-center rounded-lg">
+                          <Link to="#" className="hover:text-white">
+                            <i class="fa-brands fa-linkedin-in text text-white text-lg"></i>
+                          </Link>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -107,7 +121,7 @@ const ContactUs = () => {
           <h2 className="text-bold font-bold font-heading mb-2 text-primary text-lg text-center mb-6">
             Do you have any Wishes or Questions?
           </h2>
-          <form className="space-y-6">
+          {/* <form className="space-y-6">
             <div className="grid sm:grid-cols-2 gap-6">
               <div>
                 <label htmlFor="name" className="block mb-2 text-gray-400">
@@ -158,7 +172,7 @@ const ContactUs = () => {
               <input
                 type="checkbox"
                 id="consent"
-                className="w-5 h-5 text-yellow-400 stroke-border border-gray-600 rounded focus:ring-2 focus:ring-yellow-400"
+                className="w-5 h-5 text-secondary stroke-border border-gray-600 rounded focus:ring-2 focus:ring-yellow-400"
               />
               <label htmlFor="consent" className="text-gray-400">
                 I consent to Emerald Hotel collecting my details through this
@@ -171,7 +185,8 @@ const ContactUs = () => {
             >
               Send A Message
             </button>
-          </form>
+          </form> */}
+          <ContactForm/>
         </div>
       </div>
     </div>

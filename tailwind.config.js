@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
 
@@ -7,16 +8,11 @@ export default {
     //   sans: ["Montserrat", "Padauk", "sans-serif"],
     //   },
     fontFamily: {
-      sans: ["Montserrat", "Padauk", "sans-serif"],
-      poppins: ["Poppins", "sans-serif"],
-      body: ["Hanken Grotesk", "sans-serif"],
+      emerald: ["Hanken Grotesk", "sans-serif"],
       caveat: ["Caveat", "cursive"],
-      heading: ["Playfair Display", "serif"],
+      heading:["Playfair", "serif"],
     },
     extend: {
-      fontFamily: {
-        heading: ["Poppins", "sans-serif"],
-      },
       colors: {
         primary: {
           DEFAULT: "#18181B", // Primary dark color
@@ -38,14 +34,31 @@ export default {
           DEFAULT: "#D4D4D8", // Default border color
         },
         stroke: {
-          DEFAULT: "#FFE338", // Default stroke color
+          DEFAULT: "#fafafa", // Default stroke color
         },
         orderComplete: {
           DEFAULT: "#00E510", // Color indicating completed orders
         },
         // Add more color categories as needed
-      },
+        natural:{
+          light:"#E7E7E7",
+        },
+  
+        zinc: {
+          100: '#f4f4f5', // Lightest zinc
+          200: '#e4e4e7',
+          300: '#d4d4d8',
+          400: '#a1a1aa',
+          500: '#71717a', // Neutral gray
+          600: '#52525b',
+          700: '#3f3f46',
+          800: '#27272a',
+          900: '#18181b',
+          950: '#0f0f10', // Darkest zinc
+        },
+      }, 
     },
     },
   plugins: [require("flowbite/plugin")],
+  
 };
