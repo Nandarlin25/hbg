@@ -30,7 +30,7 @@ const ContactUs = () => {
 
           {/* Contact Information */}
           <div>
-            <h4 className="text-bold font-semibold font-heading mb-6 text-primary text-3xl">
+            <h4 className="text-bold font-semibold font-heading mb-4 text-primary text-3xl">
               Get In Touch
             </h4>
             <p className=" font-normal font-body mb-6 text-secondary text-lg">
