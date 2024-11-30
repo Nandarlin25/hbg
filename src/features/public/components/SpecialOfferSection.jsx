@@ -2,6 +2,7 @@ import React from 'react'
 import Container from "../../../components/Container";
 import line from "../../../assets/home/Line.png"
 import useHomePageOfferStore from '../../../stores/useHomePageOfferStore';
+import { Link } from 'react-router-dom';
 
 const SpecialOfferSection = () => {
     const {offers} = useHomePageOfferStore()
@@ -21,7 +22,7 @@ const SpecialOfferSection = () => {
               
                 <div className='mt-24 grid grid-cols-4 gap-5'>
                     {offers.map((offer,index) =>(
-                         <div className='col-span-1 relative' key={index}>
+                         <Link to={offer.link} className='col-span-1 relative' key={index}>
                          <img src={offer.img} alt="" className=' h-[401px]' />
                          {offer.specialOffer &&
                          <div className='absolute top-0 left-0 translate-x-5 translate-y-5 bg-primary-frame rounded-md p-2 w-[100px] h-[40px] text-center'>
@@ -31,7 +32,7 @@ const SpecialOfferSection = () => {
                          <div className='absolute bottom-0 left-0  translate-x-5 -translate-y-5'>
                              <h2 className='font-heading text-4xl text-primary-frame font-bold'>{offer.service}</h2>
                          </div>
-                     </div>
+                     </Link>
                     )
 )}
                     {/* <div className='col-span-1 relative'>

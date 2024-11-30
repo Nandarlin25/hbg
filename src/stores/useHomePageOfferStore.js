@@ -10,22 +10,30 @@ const useHomePageOfferStore = create((set)=>({
    offers: [{
     service: "Stay",
     specialOffer: "20% OFF",
-    img: offer1
+    img: offer1,
+    link: "/rooms"
+
    },
    {
     service: "Dine",
     specialOffer: "",
-    img: offer2
+    img: offer2,
+    link: "/services"
+
    },
    {
     service: "Relax",
     specialOffer: "30% OFF",
-    img: offer3
+    img: offer3,
+    link: "/services"
+
    },
    {
     service: "Facility",
     specialOffer: "",
-    img: offer4
+    img: offer4,
+    link: "/services"
+
    }
 ]
 

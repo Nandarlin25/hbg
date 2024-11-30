@@ -12,7 +12,7 @@ import {
 
 const BookingForm = () => {
   return (
-     <div className="absolute  bottom-0 -translate-y-1/2 w-full">
+     <div className="absolute  bottom-0 -translate-y-1/3 w-full">
        <Container>
        
          
