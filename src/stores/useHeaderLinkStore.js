@@ -52,6 +52,10 @@ export const useHeaderLinkStore = create(() => ({
       title: "Booking",
       header: "Your Next Stay Starts Here",
     },
+    {
+      path: "/blog-detail",
+      bgimage: bloghero,
+      title: "Blog Detail",
+    },
   ],
-
-    }))
+}));

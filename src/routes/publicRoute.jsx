@@ -5,6 +5,7 @@ import BlogPage from "../features/public/pages/BlogPage";
 import Rooms from "../features/public/pages/Rooms";
 import ServicesPage from "../features/public/pages/ServicesPage";
 import RoomsDetail from "../features/public/components/RoomsDetail";
+import BlogDetailPage from "../features/public/pages/BlogDetailPage";
 
 const AboutUsPage = lazy(() => import("../features/public/pages/AboutUsPage"));
 const ContactUsPage = lazy(() =>
@@ -36,6 +37,10 @@ const publicRoute = [
   {
     path: "blog",
     element: <BlogPage />,
+  },
+  {
+    path:"blog-detail",
+    element:<BlogDetailPage/>
   },
   {
     path: "booking",
