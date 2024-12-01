@@ -1,12 +1,12 @@
-import blogImage1 from "../assets/Blog/photo_1.jpeg";
-import blogImage2 from "../assets/Blog/photo_2.jpeg";
-import blogImage3 from "../assets/Blog/photo_3.jpeg";
-import blogImage4 from "../assets/Blog/photo_4.jpeg";
-import blogImage5 from "../assets/Blog/photo_5.jpeg";
-import blogImage6 from "../assets/Blog/photo_6.jpeg";
-import blogImage7 from "../assets/Blog/photo_7.jpeg";
-import blogImage8 from "../assets/Blog/photo_8.jpeg";
-import blogImage9 from "../assets/Blog/photo_9.jpeg";
+import blogImage1 from "../../assets/Blog/photo_1.jpeg";
+import blogImage2 from "../../assets/Blog/photo_2.jpeg";
+import blogImage3 from "../../assets/Blog/photo_3.jpeg";
+import blogImage4 from "../../assets/Blog/photo_4.jpeg";
+import blogImage5 from "../../assets/Blog/photo_5.jpeg";
+import blogImage6 from "../../assets/Blog/photo_6.jpeg";
+import blogImage7 from "../../assets/Blog/photo_7.jpeg";
+import blogImage8 from "../../assets/Blog/photo_8.jpeg";
+import blogImage9 from "../../assets/Blog/photo_9.jpeg";
 
 export const blogcard = [
   {

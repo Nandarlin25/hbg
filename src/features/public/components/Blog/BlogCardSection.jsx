@@ -1,11 +1,10 @@
-import React from 'react';
-import { blogcard } from '../../../Data/blogcard';
-import { Link } from 'react-router-dom';
-import Pagination from '../../../components/Pagination';
-import BlogNewSletter from './BlogNewSletter';
+import React from "react";
+import { blogcard } from "../../../../data/Blog/blogCard";
+import { Link } from "react-router-dom";
+import Pagination from "../../../../components/Pagination";
+import BlogNewSletter from "./BlogNewSletter";
 
 const BlogSection = () => {
- 
   return (
     <>
       <div className="container mx-auto py-10">
@@ -50,6 +49,6 @@ const BlogSection = () => {
       </div>
     </>
   );
-}
+};
 
 export default BlogSection;
