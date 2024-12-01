@@ -1,6 +1,16 @@
 import React from 'react';
+import { useForm } from 'react-hook-form';
 
 const BlogNewSletter = () => {
+    const {
+      register,
+      handleSubmit,
+      formState: { errors },
+    } = useForm();
+
+      const blogEmailSubmit = (data) => {
+        console.log("Form Data:", data);
+      };
   return (
     <>
       <section className="rounded-lg bg-zinc-300 dark:from-gray-800 dark:to-gray-900 shadow-lg">
@@ -18,19 +28,24 @@ const BlogNewSletter = () => {
             </div>
 
             {/* Form Section */}
-            <form action="#" className="lg:w-1/2">
+            <form onSubmit={handleSubmit(blogEmailSubmit)} className="lg:w-1/2">
               <div className="flex flex-col sm:flex-row items-center gap-4">
                 <div className="relative w-full">
                   <label htmlFor="email" className="sr-only">
                     Email address
                   </label>
                   <input
-                    className="w-full py-3 px-4 text-sm text-gray-900 bg-white rounded-lg shadow-md border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                    placeholder="Enter your email address"
                     type="email"
                     id="email"
-                    required
+                    placeholder="Your Name"
+                    {...register("name", { required: "Email is required" })}
+                    className="w-full py-3 px-4 text-sm text-gray-900 bg-white rounded-lg shadow-md border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   />
+                  {errors.name && (
+                    <p className="text-red-500 text-sm mt-1">
+                      {errors.name.message}
+                    </p>
+                  )}
                 </div>
                 <button
                   type="submit"
