@@ -8,8 +8,10 @@ import servicehero from "../assets/Service/service-hero.jpg";
 import contactushero from "../assets/contact/contact-us-hero.jpg";
 import bloghero from "../assets/Blog/blog-hero.jpg";
 import bookinghero from "../assets/contact/contact-us-hero.jpg";
+import  Faqhero from "../assets/FTPhero.png";
 
 import { create } from "zustand";
+import { FaQ } from "react-icons/fa6";
 
 export const useHeaderLinkStore = create(() => ({
   headercontact: [
@@ -37,14 +39,14 @@ export const useHeaderLinkStore = create(() => ({
       title: "Service",
     },
     {
-      path: "/contact-us",
-      bgimage: contactushero,
-      title: "Contact Us",
-    },
-    {
       path: "/blog",
       bgimage: bloghero,
       title: "Blog",
+    },
+    {
+      path: "/contact-us",
+      bgimage: contactushero,
+      title: "Contact Us",
     },
     {
       path: "/booking",
@@ -53,9 +55,19 @@ export const useHeaderLinkStore = create(() => ({
       header: "Your Next Stay Starts Here",
     },
     {
-      path: "/blog-detail",
-      bgimage: bloghero,
-      title: "Blog Detail",
+      path: "/faq",
+      bgimage: Faqhero,
+      title: "FAQ",
+    },
+    {
+      path: "/privacy-policy",
+      bgimage: Faqhero,
+      title: "Privacy Policy",
+    },
+    {
+      path: "/terms-and-conditions",
+      bgimage: Faqhero,
+      title: "Terms & Conditions",
     },
   ],
 }));
