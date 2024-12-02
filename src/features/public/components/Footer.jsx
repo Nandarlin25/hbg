@@ -3,6 +3,7 @@ import Container from "../../../components/Container";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const date=new Date();
   return (
     <footer className="bg-zinc-800 text-gray-400 py-8 mt-auto">
       <Container>
@@ -20,24 +21,24 @@ const Footer = () => {
             <h3 className="text-white text-lg font-semibold">Explore</h3>
             <ul className="mt-4 space-y-2">
               <li>
-                <a href="#" className="hover:text-white">
+                <Link to="/" className="hover:text-white">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white">
+                <Link to="/about-us" className="hover:text-white">
                   About us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white">
+                <Link to="/blog" className="hover:text-white">
                   Blog
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white">
+                <Link to="/services" className="hover:text-white">
                   Services
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -51,19 +52,19 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white">
+                <Link to="/faq" className="hover:text-white">
                   FAQ
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white">
+                <Link to="/privacy-policy" className="hover:text-white">
                   Privacy Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white">
+                <Link to="/terms-and-conditions" className="hover:text-white">
                   Terms &amp; conditions
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -118,7 +119,9 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-8 border-t border-gray-700 pt-4 text-start">
-          <p className="py-2">Copyrights ©2024. All Rights Reserved.</p>
+          <p className="py-2">
+            Copyrights ©{date.getFullYear()}. All Rights Reserved.
+          </p>
         </div>
       </Container>
     </footer>

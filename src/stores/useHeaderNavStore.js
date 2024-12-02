@@ -10,12 +10,14 @@ const useHeaderNavStore = create((set) => ({
     { path: "/contact-us", label: "Contact Us", isActive: false },
   ],
   activeLink: (pathLink) =>
-    set((state) => ({
-      navLinks: state.navLinks.map((link) => ({
+    set((state) => {
+      const updatedLinks = state.navLinks.map((link) => ({
         ...link,
         isActive: link.path === pathLink,
-      })),
-    })),
+      }));
+      return { navLinks: updatedLinks };
+    }),
+   
 }));
 
 export default useHeaderNavStore;
