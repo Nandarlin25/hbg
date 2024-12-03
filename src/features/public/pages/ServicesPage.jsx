@@ -1,15 +1,18 @@
-import React from 'react'
-import Container from '../../../components/Container'
-import BreadCrumb from '../components/Breadcrumb'
+import React from "react";
+import Container from "../../../components/Container";
+import BreadCrumb from "../components/Breadcrumb";
+import ServiceSection from "../components/emeralServices/ServiceSection";
 
 const ServicesPage = () => {
   return (
     <>
-    <Container>
-        <BreadCrumb currentPageTitle={"Services"} />
-    </Container>
-    </>
-  )
-}
+      <Container>
+        {/* <BreadCrumb currentPageTitle={"Services"} /> */}
 
-export default ServicesPage
+        <ServiceSection />
+      </Container>
+    </>
+  );
+};
+
+export default ServicesPage;
