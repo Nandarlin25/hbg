@@ -10,7 +10,7 @@ const DiningAndBar = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {dingindData.map((dining) => (
           <div
-            key={dining}
+            key={dining.id}
             className="bg-white mb-9 rounded-lg shadow-lg hover:scale-105 overflow-hidden hover:shadow-lg transition-transform border"
           >
             {/* Image Section */}

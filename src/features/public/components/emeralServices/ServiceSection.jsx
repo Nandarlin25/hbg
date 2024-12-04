@@ -68,13 +68,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useServiceStore } from "../../../../stores/useServiceStore";
-
 import RestaurantSection from "./RestaurantSection";
 import SpaSection from "./SpaSection";
 import PoolSection from "./PoolSection";
 import FitnessSection from "./FitnessSection";
 
+
 const ServiceSection = () => {
+  
   const { services, selectService, selectedService } = useServiceStore();
 
   // Default to the first service if none is selected
@@ -82,6 +83,7 @@ const ServiceSection = () => {
 
   return (
     <>
+     
       <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-14">
         {/* Header */}
         <div className="text-center mb-12">

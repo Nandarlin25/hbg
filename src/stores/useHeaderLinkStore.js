@@ -1,17 +1,17 @@
 // store.js
 
 
-import homehero from "../assets/home/home-hero.jpg";
-import roomhero from "../assets/Room/room-hero.jpg";
-import aboutushero from "../assets/about-us/about-us-hero.jpg";
-import servicehero from "../assets/Service/service-hero.jpg";
-import contactushero from "../assets/contact/contact-us-hero.jpg";
-import bloghero from "../assets/Blog/blog-hero.jpg";
-import bookinghero from "../assets/contact/contact-us-hero.jpg";
+import homehero from "../assets/Banner/Home hero.jpg";
+import roomhero from "../assets/Banner/Room hero.jpg";
+import aboutushero from "../assets/Banner/about us hero .jpg";
+import servicehero from "../assets/Banner/service hero.jpg";
+import contactushero from "../assets/Banner/contact us hero.jpg";
+import bloghero from "../assets/Banner/blog hero.jpg";
+import bookinghero from "../assets/Banner/Room hero.jpg";
 import  Faqhero from "../assets/FTPhero.png";
 
 import { create } from "zustand";
-import { FaQ } from "react-icons/fa6";
+
 
 export const useHeaderLinkStore = create(() => ({
   headercontact: [
@@ -26,7 +26,7 @@ export const useHeaderLinkStore = create(() => ({
     {
       path: "/rooms",
       bgimage: roomhero,
-      title: "Room",
+     title: "Room",
     },
     {
       path: "/about-us",
@@ -36,38 +36,38 @@ export const useHeaderLinkStore = create(() => ({
     {
       path: "/services",
       bgimage: servicehero,
-      title: "Service",
+     title: "Service",
     },
     {
       path: "/blog",
       bgimage: bloghero,
-      title: "Blog",
+     title: "Blog",
     },
     {
       path: "/contact-us",
       bgimage: contactushero,
-      title: "Contact Us",
+     title: "Contact Us",
     },
     {
       path: "/booking",
       bgimage: bookinghero,
-      title: "Booking",
-      header: "Your Next Stay Starts Here",
+     title: "Booking",
+      title: "Your Next Stay Starts Here",
     },
     {
       path: "/faq",
       bgimage: Faqhero,
-      title: "FAQ",
+     title: "FAQ",
     },
     {
       path: "/privacy-policy",
       bgimage: Faqhero,
-      title: "Privacy Policy",
+     title: "Privacy Policy",
     },
     {
       path: "/terms-and-conditions",
       bgimage: Faqhero,
-      title: "Terms & Conditions",
+     title: "Terms & Conditions",
     },
   ],
 }));

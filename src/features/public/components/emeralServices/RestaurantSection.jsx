@@ -1,8 +1,4 @@
 import React from 'react';
-
-
-
-import { IoCheckmarkOutline } from "react-icons/io5";
 import image1 from "../../../../assets/Service/Restauarant/first photo.jpg"
 import DiningAndBar from './DiningAndBar';
 const RestaurantSection = () => {
@@ -38,7 +34,7 @@ const RestaurantSection = () => {
           </p>
         </div>
       </div>
-      <DiningAndBar />
+      <DiningAndBar /> 
     </section>
   );
 }
