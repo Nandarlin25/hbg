@@ -1,13 +1,12 @@
 import React from "react";
-import Container from "../../../components/Container";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
   const date=new Date();
   return (
-    <footer className="bg-zinc-800 text-gray-400 py-8 mt-auto">
-      <Container>
-        <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+   
+      <footer className="bg-zinc-800 text-gray-400 py-8 mt-auto overflow-x-hidden ">
+        <div className="container mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 ">
           {/* Brand Section */}
           <div className="">
             <h2 className="text-white text-2xl font-bold">Emerald</h2>
@@ -17,7 +16,7 @@ const Footer = () => {
             </p>
           </div>
           {/* Explore Links */}
-          <div className="px-24">
+          <div className="">
             <h3 className="text-white text-lg font-semibold">Explore</h3>
             <ul className="mt-4 space-y-2">
               <li>
@@ -43,7 +42,7 @@ const Footer = () => {
             </ul>
           </div>
           {/* Contact Links */}
-          <div className="px-8">
+          <div className="">
             <h3 className="text-white text-lg font-semibold">Contact</h3>
             <ul className="mt-4 space-y-2">
               <li>
@@ -73,7 +72,7 @@ const Footer = () => {
             <h3 className="text-white text-lg font-semibold">
               App available on
             </h3>
-            <div className="mt-4 flex space-x-4">
+            <div className="mt-4 flex flex-wrap gap-4">
               <a href="#">
                 <img
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/1280px-Google_Play_Store_badge_EN.svg.png"
@@ -81,7 +80,6 @@ const Footer = () => {
                   className="w-28 h-10"
                 />
               </a>
-
               <a href="#">
                 <img
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/2560px-Download_on_the_App_Store_Badge.svg.png"
@@ -91,40 +89,41 @@ const Footer = () => {
               </a>
             </div>
             <h3 className="text-white text-lg font-semibold mt-6">Follow Us</h3>
-            <div className="mt-4 flex space-x-4">
-              <div className="bg-zinc-950 size-10 flex justify-center items-center rounded-lg">
-                <a href="#" className="hover:text-white">
-                  <i className="fa-brands fa-facebook-f text text-white text-lg"></i>
-                </a>
-              </div>
-
-              <div className="bg-zinc-950 size-10 flex justify-center items-center rounded-lg ">
-                <a href="#" className="hover:text-white">
-                  <i className="fa-brands fa-instagram text text-white text-lg"></i>
-                </a>
-              </div>
-
-              <div className="bg-zinc-950 size-10 flex justify-center items-center rounded-lg">
-                <a href="#" className="hover:text-white">
-                  <i className="fa-brands fa-twitter text text-white text-lg"></i>
-                </a>
-              </div>
-
-              <div className="bg-zinc-950 size-10 flex justify-center items-center rounded-lg">
-                <a href="#" className="hover:text-white">
-                  <i className="fa-brands fa-linkedin-in text text-white text-lg"></i>
-                </a>
-              </div>
+            <div className="mt-4 flex flex-wrap gap-4">
+              <a
+                href="#"
+                className="hover:text-white bg-zinc-950 w-10 h-10 flex justify-center items-center rounded-lg"
+              >
+                <i className="fa-brands fa-facebook-f text-white text-lg"></i>
+              </a>
+              <a
+                href="#"
+                className="hover:text-white bg-zinc-950 w-10 h-10 flex justify-center items-center rounded-lg"
+              >
+                <i className="fa-brands fa-instagram text-white text-lg"></i>
+              </a>
+              <a
+                href="#"
+                className="hover:text-white bg-zinc-950 w-10 h-10 flex justify-center items-center rounded-lg"
+              >
+                <i className="fa-brands fa-twitter text-white text-lg"></i>
+              </a>
+              <a
+                href="#"
+                className="hover:text-white bg-zinc-950 w-10 h-10 flex justify-center items-center rounded-lg"
+              >
+                <i className="fa-brands fa-linkedin-in text-white text-lg"></i>
+              </a>
             </div>
           </div>
         </div>
-        <div className="mt-8 border-t border-gray-700 pt-4 text-start">
+        <div className="mt-8 border-t border-gray-700 pt-4 text-center">
           <p className="py-2">
-            Copyrights ©{date.getFullYear()}. All Rights Reserved.
+            Copyrights ©{new Date().getFullYear()}. All Rights Reserved.
           </p>
         </div>
-      </Container>
-    </footer>
+      </footer>
+   
   );
 };
 
