@@ -1,11 +1,20 @@
 import { Children, lazy, Suspense } from "react";
+import BlogDetailPage from "../features/public/pages/BlogDetailPage";
 
-import BookingPage from "../features/auth/pages/BookingPage";
-import BlogPage from "../features/public/pages/BlogPage";
-import Rooms from "../features/public/pages/Rooms";
-import ServicesPage from "../features/public/pages/ServicesPage";
-import RoomsDetail from "../features/public/components/RoomsDetail";
-import PageLoading from "../components/PageLoading";
+const BookingPage = lazy(() => import("../features/auth/pages/BookingPage"));
+const BlogPage = lazy(() => import("../features/public/pages/BlogPage"));
+const Rooms = lazy(() => import("../features/public/pages/Rooms"));
+const ServicesPage = lazy(() =>
+  import("../features/public/pages/ServicesPage")
+);
+
+const FAQPage = lazy(() => import("../features/public/pages/FAQPage"));
+const PrivacyPolicyPage = lazy(() =>
+  import("../features/public/pages/PrivacyPolicyPage")
+);
+const TermAndConditionPage = lazy(() =>
+  import("../features/public/pages/TermAndConditionPage")
+);
 
 const AboutUsPage = lazy(() => import("../features/public/pages/AboutUsPage"));
 const ContactUsPage = lazy(() =>
