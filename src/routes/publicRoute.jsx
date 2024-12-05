@@ -1,6 +1,14 @@
 import { Children, lazy, Suspense } from "react";
-import BlogDetailPage from "../features/public/pages/BlogDetailPage";
 import PageLoading from "../components/PageLoading";
+
+
+const BookingDetailPage = lazy(() =>
+  import("../features/public/pages/BookingDetailPage")
+);
+const BookingCompletePage = lazy(() =>
+  import("../features/public/pages/BookingCompletePage")
+);
+
 
 const BookingPage = lazy(() => import("../features/auth/pages/BookingPage"));
 const BlogPage = lazy(() => import("../features/public/pages/BlogPage"));
@@ -78,6 +86,47 @@ const publicRoute = [
     element: (
       <Suspense fallback={<PageLoading />}>
         <BookingPage />
+      </Suspense>
+    ),
+  },
+  {
+    path: "/faq",
+
+    element: (
+      <Suspense fallback={<PageLoading />}>
+        <FAQPage />
+      </Suspense>
+    ),
+  },
+  {
+    path: "/terms-and-conditions",
+    element: (
+      <Suspense fallback={<PageLoading />}>
+        <TermAndConditionPage />
+      </Suspense>
+    ),
+  },
+  {
+    path: "/privacy-policy",
+    element: (
+      <Suspense fallback={<PageLoading />}>
+        <PrivacyPolicyPage />
+      </Suspense>
+    ),
+  },
+  {
+    path: "rooms/room-details/booking-details",
+    element: (
+      <Suspense fallback={<PageLoading />}>
+        <BookingDetailPage />{" "}
+      </Suspense>
+    ),
+  },
+  {
+    path: "rooms/room-details/booking-completed",
+    element: (
+      <Suspense fallback={<PageLoading />}>
+        <BookingCompletePage />{" "}
       </Suspense>
     ),
   },
