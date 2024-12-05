@@ -83,7 +83,6 @@ const ServiceSection = () => {
 
   return (
     <>
-     
       <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-14">
         {/* Header */}
         <div className="text-center mb-12">
@@ -115,8 +114,8 @@ const ServiceSection = () => {
               onClick={() => selectService(service)}
               className={`${
                 currentService.id === service.id
-                  ? "active bg-secondary-card border text-primary py-2 px-6 sm:px-8 font-emerald font-medium sm:font-normal text-lg sm:text-2xl lg:text-3xl w-full h-[80px] sm:h-[100px] lg:h-[117px] leading-6 text-center"
-                  : "border text-primary py-2 px-6 sm:px-8 font-emerald font-medium sm:font-normal text-lg sm:text-2xl lg:text-3xl w-full h-[80px] sm:h-[100px] lg:h-[117px] leading-6 text-center"
+                  ? "active bg-secondary-card border text-primary py-3 lg:py-4 px-6 lg:px-8 font-emerald font-medium lg:font-semibold text-lg lg:text-xl w-full h-[80px] lg:h-[100px] leading-6 text-center"
+                  : "border text-primary py-3 lg:py-4 px-6 lg:px-8 font-emerald font-medium lg:font-semibold text-lg lg:text-xl w-full h-[80px] lg:h-[100px] leading-6 text-center"
               }`}
             >
               {service.title}

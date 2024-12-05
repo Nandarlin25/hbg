@@ -1,11 +1,11 @@
 import React from "react";
-import Container from "../../../components/Container";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
   const date=new Date();
   return (
-    <footer className="bg-zinc-800 text-gray-400 py-8 mt-auto overflow-x-hidden ">
+   
+      <footer className="bg-zinc-800 text-gray-400 py-8 mt-auto overflow-x-hidden ">
         <div className="container mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 ">
           {/* Brand Section */}
           <div className="">
@@ -122,9 +122,8 @@ const Footer = () => {
             Copyrights ©{new Date().getFullYear()}. All Rights Reserved.
           </p>
         </div>
-
-    </footer>
-  
+      </footer>
+   
   );
 };
 

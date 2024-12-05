@@ -4,7 +4,7 @@ import image2 from "../../../../assets/Service/Pool Swimming/1.jpg";
 import { IoCheckmarkOutline } from "react-icons/io5";
 const PoolSection = () => {
   return (
-    <section className="container mx-auto px-4 py-8">
+    <section className=" mx-auto  py-8">
       <div className="grid lg:grid-cols-2 gap-8 items-center">
         {/* Image Section */}
         <div className="relative w-full max-w-[589px] h-[400px] mx-auto hover:scale-105 overflow-hidden hover:shadow-sm transition-transform">

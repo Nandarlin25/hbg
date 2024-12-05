@@ -6,6 +6,7 @@ import Container from "../../../components/Container";
 import BreadCrumb from "./BreadCrumb";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoMdClose } from "react-icons/io";
+import { RiHotelLine } from "react-icons/ri";
 
 
 
@@ -77,7 +78,7 @@ const Headers = () => {
               : "bg-transparent text-white"
           }`}
         >
-          <Container className={"flex justify-between items-center"}>
+          <Container className={"flex justify-between items-center px-7"}>
             <div className="text-white font-bold italic tracking-wide">
               <Link to="/" className="flex items-center gap-2">
                 <span className="font-heading text-4xl logo">Emerald</span>

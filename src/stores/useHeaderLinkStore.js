@@ -1,13 +1,13 @@
 // store.js
 
 
-import homehero from "../assets/Banner/Home hero.jpg";
-import roomhero from "../assets/Banner/Room hero.jpg";
-import aboutushero from "../assets/Banner/about us hero .jpg";
-import servicehero from "../assets/Banner/service hero.jpg";
-import contactushero from "../assets/Banner/contact us hero.jpg";
-import bloghero from "../assets/Banner/blog hero.jpg";
-import bookinghero from "../assets/Banner/Room hero.jpg";
+import homehero from "../assets/Banner/Home hero.webp";
+import roomhero from "../assets/Banner/Room hero.webp";
+import aboutushero from "../assets/Banner/about us hero .webp";
+import servicehero from "../assets/Banner/service hero.webp";
+import contactushero from "../assets/Banner/contact us hero.webp";
+import bloghero from "../assets/Banner/blog hero.webp";
+import bookinghero from "../assets/Banner/Room hero.webp";
 import  Faqhero from "../assets/FTPhero.png";
 
 import { create } from "zustand";

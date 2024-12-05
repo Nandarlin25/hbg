@@ -7,8 +7,6 @@ const ServicesPage = () => {
   return (
     <>
       <Container>
-        {/* <BreadCrumb currentPageTitle={"Services"} /> */}
-
         <ServiceSection />
       </Container>
     </>
