@@ -1,5 +1,3 @@
-// store.js
-
 
 import homehero from "../assets/home/home-hero.jpg";
 import roomhero from "../assets/Room/room-hero.jpg";
@@ -24,7 +22,7 @@ export const useHeaderLinkStore = create(() => ({
     {
       path: "/rooms",
       bgimage: roomhero,
-      title: "Room",
+      title: "Srandard Room",
     },
     {
       path: "/about-us",

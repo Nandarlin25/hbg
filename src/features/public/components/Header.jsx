@@ -4,6 +4,7 @@ import Logo from "../../../components/Logo";
 import useHeaderNavStore from "../../../stores/useHeaderNavStore";
 import { useHeaderLinkStore } from "../../../stores/useHeaderLinkStore";
 import Container from "../../../components/Container";
+import BreadCrumb from "./BreadCrumb";
 
 const Headers = () => {
   const [sticky, setSticky] = useState(false);
@@ -56,7 +57,7 @@ const Headers = () => {
 
   return (
     <>
-      <div>
+      <div className="relative">
         {/* Sticky Header */}
         <nav
           className={`fixed navbar top-0 left-0 w-full flex items-center justify-between p-4 z-10 transition-all duration-500 ${
@@ -64,64 +65,63 @@ const Headers = () => {
           }`}
         >
           <Container className={"flex justify-between items-center"}>
-          <div className="text-white text-2xl font-bold italic">
-            {/* <Logo /> */}
-            <Link to="/" className="flex items-center">
-              <span className="self-center font-heading font-bold text-4xl whitespace-nowrap dark:text-white">
-                Emerald
-              </span>
-            </Link>
-          </div>
-          <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
-          {renderNavLinks()}
-          </ul>
-          <div className="flex items-center lg:order-2">
-            <Link
-              to="/booking"
-              className="text-gray-800 bg-slate-100 dark:text-white hover:bg-gray-200 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800"
-            >
-              Book Now
-            </Link>
-          </div>
+            <div className="text-white text-2xl font-bold italic">
+              {/* <Logo /> */}
+              <Link to="/" className="flex items-center">
+                <span className="self-center font-heading font-bold text-4xl whitespace-nowrap dark:text-white">
+                  Emerald
+                </span>
+              </Link>
+            </div>
+            <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+              {renderNavLinks()}
+            </ul>
+            <div className="flex items-center lg:order-2">
+              <Link
+                to="/booking"
+                className="text-gray-800 bg-slate-100 dark:text-white hover:bg-gray-200 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800"
+              >
+                Book Now
+              </Link>
+            </div>
           </Container>
         </nav>
-        
+
         {/* Background Section */}
         {currentHeaderContent && currentHeaderContent.bgimage && (
-      <div
-        className="relative bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `url(${currentHeaderContent.bgimage})`,
-          height: "600px",
-        }}
-      >
-        <div className="absolute inset-0 bg-opacity-40 bg-zinc-800 opacity-10"></div>
-        <div className="absolute bottom-36 z-10 text-center w-full flex flex-col">
-        
-        <div className="w-1/2 mx-auto px-4 py-5">
-        {currentHeaderContent.title && (
-            <h1 className="text-white text-4xl font-caveat font-bold py-3">
-              {currentHeaderContent.title}
-            </h1>
-          )}
-          {currentHeaderContent.header && (
-            <h3 className="text-white text-5xl font-heading font-bold py-5">
-              {currentHeaderContent.header}
-            </h3>
-          )}
-          {currentHeaderContent.paragraph && (
-            <p className="text-white text-lg font-emerald font-normal text-pretty ml-10">
-              {currentHeaderContent.paragraph}
-            </p>
-          )}
-        </div>
-        </div>
+          <div
+            className="relative bg-cover bg-center bg-no-repeat "
+            style={{
+              backgroundImage: `url(${currentHeaderContent.bgimage})`,
+              height: "600px",
+            }}
+          >
+            <div className="absolute inset-0 bg-opacity-40 bg-zinc-800 opacity-10"></div>
+            <div className="absolute bottom-36 z-10 text-center w-full flex flex-col">
+              <div className="w-1/2 mx-auto px-4 py-20">
+                {currentHeaderContent.title && (
+                  <h1 className="text-white text-4xl font-heading font-bold py-3">
+                    {currentHeaderContent.title}
+                  </h1>
+                )}
+
+                {currentHeaderContent.header && (
+                  <h3 className="text-white text-5xl font-heading font-bold py-5">
+                    {currentHeaderContent.header}
+                  </h3>
+                )}
+                {currentHeaderContent.paragraph && (
+                  <p className="text-white text-lg font-emerald font-normal text-pretty ml-10">
+                    {currentHeaderContent.paragraph}
+                  </p>
+                )}
+              </div>
+            </div>
+          </div>
+        )}
+
       </div>
-    )}
-      </div>
-      
     </>
-    
   );
 };
 

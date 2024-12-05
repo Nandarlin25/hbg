@@ -1,10 +1,11 @@
-import { Children, lazy } from "react";
+import { Children, lazy, Suspense } from "react";
 
 import BookingPage from "../features/auth/pages/BookingPage";
 import BlogPage from "../features/public/pages/BlogPage";
 import Rooms from "../features/public/pages/Rooms";
 import ServicesPage from "../features/public/pages/ServicesPage";
 import RoomsDetail from "../features/public/components/RoomsDetail";
+import PageLoading from "../components/PageLoading";
 
 const AboutUsPage = lazy(() => import("../features/public/pages/AboutUsPage"));
 const ContactUsPage = lazy(() =>
@@ -15,31 +16,60 @@ const HomePage = lazy(() => import("../features/public/pages/HomePage"));
 const publicRoute = [
   {
     index: true,
-    element: <HomePage />,
+    element: (
+      <Suspense fallback={<PageLoading />}>
+        <HomePage />
+      </Suspense>
+    ),
   },
   {
     path: "rooms",
-    element: <Rooms />,
+    element: (
+      <Suspense fallback={<PageLoading />}>
+        <Rooms />
+      </Suspense>
+    ),
   },
   {
     path: "about-us",
-    element: <AboutUsPage />,
+    element: (
+      <Suspense fallback={<PageLoading />}>
+        <AboutUsPage />
+      </Suspense>
+    ),
   },
+
   {
     path: "services",
-    element: <ServicesPage />,
+    element: (
+      <Suspense fallback={<PageLoading />}>
+        <ServicesPage />
+      </Suspense>
+    ),
   },
   {
     path: "contact-us",
-    element: <ContactUsPage />,
+    element: (
+      <Suspense fallback={<PageLoading />}>
+        <ContactUsPage />
+      </Suspense>
+    ),
   },
   {
     path: "blog",
-    element: <BlogPage />,
+    element: (
+      <Suspense fallback={<PageLoading />}>
+        <BlogPage />
+      </Suspense>
+    ),
   },
   {
     path: "booking",
-    element: <BookingPage />,
+    element: (
+      <Suspense fallback={<PageLoading />}>
+        <BookingPage />
+      </Suspense>
+    ),
   },
 ];
 
