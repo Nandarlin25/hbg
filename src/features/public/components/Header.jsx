@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, Links, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import useHeaderNavStore from "../../../stores/useHeaderNavStore";
 import { useHeaderLinkStore } from "../../../stores/useHeaderLinkStore";
 import Container from "../../../components/Container";
@@ -7,6 +7,7 @@ import BreadCrumb from "./BreadCrumb";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoMdClose } from "react-icons/io";
 import { RiHotelLine } from "react-icons/ri";
+import CheckAvailabilityBox from "./CheckAvailabilityBox";
 
 
 
@@ -69,16 +70,15 @@ const Headers = () => {
 
   return (
     <>
+
     
       <div>
         {/* Sticky Header */}
         <nav
-          className={`fixed top-0 left-0 w-full flex items-center justify-between p-4 z-10 transition-all duration-500 ${
-            sticky
-              ? "bg-primary text-white shadow-lg"
-              : "bg-transparent text-white"
-          }`}
-        >
+        className={`fixed top-0 left-0 w-full flex items-center justify-between p-4 z-10 transition-all duration-500 ${
+          sticky || !currentHeaderContent.bgimage ? "bg-primary" : "bg-transparent" 
+        }`}
+      >
           <Container className={"flex justify-between items-center px-7"}>
             <div className="text-white font-bold italic tracking-wide">
               <Link to="/" className="flex items-center gap-2">
@@ -220,7 +220,10 @@ const Headers = () => {
                   {currentHeaderContent.paragraph}
                 </p>
               )}
+              
             </div>
+            {currentHeaderContent.path === "/"  && <CheckAvailabilityBox/> }
+              {currentHeaderContent.path ==="/rooms" && <CheckAvailabilityBox/>}
           </div>
         )}
       </div>
