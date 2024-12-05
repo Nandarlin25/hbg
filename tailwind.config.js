@@ -39,6 +39,9 @@ export default {
         orderComplete: {
           DEFAULT: "#00E510", // Color indicating completed orders
         },
+        star:{
+          solid:"#FFE338",
+        },
         // Add more color categories as needed
         natural:{
           light:"#E7E7E7",

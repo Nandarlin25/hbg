@@ -1,5 +1,6 @@
 import { Children, lazy, Suspense } from "react";
 import BlogDetailPage from "../features/public/pages/BlogDetailPage";
+import PageLoading from "../components/PageLoading";
 
 const BookingPage = lazy(() => import("../features/auth/pages/BookingPage"));
 const BlogPage = lazy(() => import("../features/public/pages/BlogPage"));
@@ -26,7 +27,7 @@ const publicRoute = [
   {
     index: true,
     element: (
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<PageLoading />}>
         <HomePage />
       </Suspense>
     ),
@@ -34,7 +35,7 @@ const publicRoute = [
   {
     path: "rooms",
     element: (
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<PageLoading />}>
         <Rooms />
       </Suspense>
     ),
@@ -42,15 +43,16 @@ const publicRoute = [
   {
     path: "about-us",
     element: (
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<PageLoading />}>
         <AboutUsPage />
       </Suspense>
     ),
   },
+
   {
     path: "services",
     element: (
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<PageLoading />}>
         <ServicesPage />
       </Suspense>
     ),
@@ -58,7 +60,7 @@ const publicRoute = [
   {
     path: "contact-us",
     element: (
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<PageLoading />}>
         <ContactUsPage />
       </Suspense>
     ),
@@ -66,46 +68,16 @@ const publicRoute = [
   {
     path: "blog",
     element: (
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<PageLoading />}>
         <BlogPage />
       </Suspense>
     ),
   },
   {
-    path:"blog-detail",
-    element:<BlogDetailPage/>
-  },
-  {
     path: "booking",
-
     element: (
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<PageLoading />}>
         <BookingPage />
-      </Suspense>
-    ),
-  },
-  {
-    path: "faq",
-
-    element: (
-      <Suspense fallback={<div>Loading...</div>}>
-        <FAQPage />
-      </Suspense>
-    ),
-  },
-  {
-    path: "terms-and-conditions",
-    element: (
-      <Suspense fallback={<div>Loading...</div>}>
-        <TermAndConditionPage />
-      </Suspense>
-    ),
-  },
-  {
-    path: "privacy-policy",
-    element: (
-      <Suspense fallback={<div>Loading...</div>}>
-        <PrivacyPolicyPage />
       </Suspense>
     ),
   },
