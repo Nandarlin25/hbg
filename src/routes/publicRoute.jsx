@@ -1,7 +1,10 @@
 import { Children, lazy, Suspense } from "react";
-const BookingDetailPage = lazy(() => import("../features/public/pages/BookingDetailPage"));
-const BookingCompletePage = lazy(() => import("../features/public/pages/BookingCompletePage"));
-
+const BookingDetailPage = lazy(() =>
+  import("../features/public/pages/BookingDetailPage")
+);
+const BookingCompletePage = lazy(() =>
+  import("../features/public/pages/BookingCompletePage")
+);
 
 const BookingPage = lazy(() => import("../features/auth/pages/BookingPage"));
 const BlogPage = lazy(() => import("../features/public/pages/BlogPage"));
@@ -111,17 +114,20 @@ const publicRoute = [
   },
   {
     path: "rooms/room-details/booking-details",
-    element:( <Suspense fallback={<div>Loading...</div>}>
-<BookingDetailPage/>    </Suspense>) 
- }
- ,
- {
-   path: "rooms/room-details/booking-completed",
-   element:(
-    <Suspense fallback={<div>Loading...</div>}>
-<BookingCompletePage/>  </Suspense>
-   ) 
-}
+    element: (
+      <Suspense fallback={<div>Loading...</div>}>
+        <BookingDetailPage />{" "}
+      </Suspense>
+    ),
+  },
+  {
+    path: "rooms/room-details/booking-completed",
+    element: (
+      <Suspense fallback={<div>Loading...</div>}>
+        <BookingCompletePage />{" "}
+      </Suspense>
+    ),
+  },
 ];
 
 export default publicRoute;

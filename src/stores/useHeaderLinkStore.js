@@ -70,12 +70,13 @@ export const useHeaderLinkStore = create(() => ({
       bgimage: Faqhero,
       title: "Terms & Conditions",
     },
-    ,
+    
     {
       path: "/rooms/room-details/booking-details",
       bgimage: bookinghero,
-      title: "Booking",
-      header: "Your Next Stay Starts Here",
+      title: null,
+      header: "Booking",
+      paragraph: "Your Next Stay Starts Here"
     },
     {
       path: "/rooms/room-details/booking-completed",

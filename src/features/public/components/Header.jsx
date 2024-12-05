@@ -59,8 +59,8 @@ const Headers = () => {
       <div>
         {/* Sticky Header */}
         <nav
-          className={`fixed navbar top-0 left-0 w-full flex items-center justify-between p-4 z-10 transition-all duration-500 ${
-            sticky ? "bg-primary" : "bg-transparent"
+          className={`fixed top-0 left-0 w-full flex items-center justify-between p-4 z-10 transition-all duration-500 ${
+            sticky || !currentHeaderContent.bgimage ? "bg-primary" : "bg-transparent" 
           }`}
         >
           <Container className={"flex justify-between items-center"}>
