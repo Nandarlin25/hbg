@@ -6,9 +6,7 @@ const Rooms = lazy(() => import("../features/public/pages/Rooms"));
 const ServicesPage = lazy(() =>
   import("../features/public/pages/ServicesPage")
 );
-const RoomsDetail = lazy(() =>
-  import("../features/public/components/RoomsDetail")
-);
+
 const FAQPage = lazy(() => import("../features/public/pages/FAQPage"));
 const PrivacyPolicyPage = lazy(() =>
   import("../features/public/pages/PrivacyPolicyPage")
@@ -82,7 +80,7 @@ const publicRoute = [
     ),
   },
   {
-    path: "/faq",
+    path: "faq",
 
     element: (
       <Suspense fallback={<div>Loading...</div>}>
@@ -91,7 +89,7 @@ const publicRoute = [
     ),
   },
   {
-    path: "/terms-and-conditions",
+    path: "terms-and-conditions",
     element: (
       <Suspense fallback={<div>Loading...</div>}>
         <TermAndConditionPage />
@@ -99,7 +97,7 @@ const publicRoute = [
     ),
   },
   {
-    path: "/privacy-policy",
+    path: "privacy-policy",
     element: (
       <Suspense fallback={<div>Loading...</div>}>
         <PrivacyPolicyPage />
