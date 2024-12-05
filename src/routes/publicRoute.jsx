@@ -1,5 +1,6 @@
 import { Children, lazy, Suspense } from "react";
 import BlogDetailPage from "../features/public/pages/BlogDetailPage";
+import PageLoading from "../components/PageLoading";
 
 const BookingPage = lazy(() => import("../features/auth/pages/BookingPage"));
 const BlogPage = lazy(() => import("../features/public/pages/BlogPage"));
