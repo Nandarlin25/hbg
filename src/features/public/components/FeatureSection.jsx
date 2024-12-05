@@ -10,13 +10,12 @@ import TestimonialSection from "./TestimonialSection";
 import CTASection from "./CTASection";
 import useHomeRoomsIntroStore from "../../../stores/useHomeRoomsIntroStore";
 import { Link } from "react-router-dom";
-import BookingForm from "./BookingForm";
 
 const FeatureSection = () => {
   const {rooms} = useHomeRoomsIntroStore()
   return (
    <>
-    <BookingForm/>
+    {/* <BookingForm/> */}
 
     <section className=" ">
      <Container>
