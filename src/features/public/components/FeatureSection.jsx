@@ -16,7 +16,7 @@ const FeatureSection = () => {
   const {rooms} = useHomeRoomsIntroStore()
   return (
    <>
-         <BookingForm/>
+    <BookingForm/>
 
     <section className=" ">
      <Container>
