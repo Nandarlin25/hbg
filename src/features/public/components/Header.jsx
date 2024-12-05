@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
-import Logo from "../../../components/Logo";
+import { Link, useLocation } from "react-router-dom"
 import useHeaderNavStore from "../../../stores/useHeaderNavStore";
 import { useHeaderLinkStore } from "../../../stores/useHeaderLinkStore";
 import Container from "../../../components/Container";
