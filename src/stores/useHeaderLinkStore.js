@@ -27,6 +27,11 @@ export const useHeaderLinkStore = create(() => ({
       title: "Room",
     },
     {
+      path: "/rooms/detail",
+      bgimage: roomhero,
+      title: "Room Details",
+    },
+    {
       path: "/about-us",
       bgimage: aboutushero,
       title: "About Us",

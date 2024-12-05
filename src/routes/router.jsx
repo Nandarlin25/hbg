@@ -5,6 +5,7 @@ import publicRoute from "./publicRoute";
 import authRoute from "./authRoute";
 import NotFound from "../components/NotFound";
 import dashboardRoute from "./dashboardRoute";
+import roomsRoute from "./roomsRoute";
 
 const router = createBrowserRouter([
   {

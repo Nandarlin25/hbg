@@ -4,7 +4,7 @@ import BookingPage from "../features/auth/pages/BookingPage";
 import BlogPage from "../features/public/pages/BlogPage";
 import Rooms from "../features/public/pages/Rooms";
 import ServicesPage from "../features/public/pages/ServicesPage";
-import RoomsDetail from "../features/public/components/RoomsDetail";
+import roomsRoute from "./roomsRoute";
 
 const AboutUsPage = lazy(() => import("../features/public/pages/AboutUsPage"));
 const ContactUsPage = lazy(() =>
@@ -41,6 +41,7 @@ const publicRoute = [
     path: "booking",
     element: <BookingPage />,
   },
+  ...roomsRoute
 ];
 
 export default publicRoute;
