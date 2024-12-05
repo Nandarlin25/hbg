@@ -1,5 +1,3 @@
-// store.js
-
 
 import homehero from "../assets/Banner/Home hero.webp";
 import roomhero from "../assets/Banner/Room hero.webp";
