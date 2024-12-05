@@ -37,7 +37,7 @@ const RoomDetailCard = () => {
             {
               roomDetailBtn.filter((btn)=> btn.id== 3 && btn.isActive==true ).map((btn)=> (<RoomRules key={btn.id}/>))
             }
-            
+    
           </div>
         </div>
         </Container>

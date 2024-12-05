@@ -1,10 +1,29 @@
-import { Children, lazy } from "react";
+import { lazy, Suspense } from "react";
+import PageLoading from "../components/PageLoading";
 
-import BookingPage from "../features/auth/pages/BookingPage";
-import BlogPage from "../features/public/pages/BlogPage";
-import Rooms from "../features/public/pages/Rooms";
-import ServicesPage from "../features/public/pages/ServicesPage";
-import roomsRoute from "./roomsRoute";
+
+const BookingDetailPage = lazy(() =>
+  import("../features/public/pages/BookingDetailPage")
+);
+const BookingCompletePage = lazy(() =>
+  import("../features/public/pages/BookingCompletePage")
+);
+
+
+const BookingPage = lazy(() => import("../features/auth/pages/BookingPage"));
+const BlogPage = lazy(() => import("../features/public/pages/BlogPage"));
+const Rooms = lazy(() => import("../features/public/pages/Rooms"));
+const ServicesPage = lazy(() =>
+  import("../features/public/pages/ServicesPage")
+);
+
+const FAQPage = lazy(() => import("../features/public/pages/FAQPage"));
+const PrivacyPolicyPage = lazy(() =>
+  import("../features/public/pages/PrivacyPolicyPage")
+);
+const TermAndConditionPage = lazy(() =>
+  import("../features/public/pages/TermAndConditionPage")
+);
 
 const AboutUsPage = lazy(() => import("../features/public/pages/AboutUsPage"));
 const ContactUsPage = lazy(() =>
@@ -15,31 +34,101 @@ const HomePage = lazy(() => import("../features/public/pages/HomePage"));
 const publicRoute = [
   {
     index: true,
-    element: <HomePage />,
+    element: (
+      <Suspense fallback={<PageLoading />}>
+        <HomePage />
+      </Suspense>
+    ),
   },
   {
     path: "rooms",
-    element: <Rooms />,
+    element: (
+      <Suspense fallback={<PageLoading />}>
+        <Rooms />
+      </Suspense>
+    ),
   },
   {
     path: "about-us",
-    element: <AboutUsPage />,
+    element: (
+      <Suspense fallback={<PageLoading />}>
+        <AboutUsPage />
+      </Suspense>
+    ),
   },
+
   {
     path: "services",
-    element: <ServicesPage />,
+    element: (
+      <Suspense fallback={<PageLoading />}>
+        <ServicesPage />
+      </Suspense>
+    ),
   },
   {
     path: "contact-us",
-    element: <ContactUsPage />,
+    element: (
+      <Suspense fallback={<PageLoading />}>
+        <ContactUsPage />
+      </Suspense>
+    ),
   },
   {
     path: "blog",
-    element: <BlogPage />,
+    element: (
+      <Suspense fallback={<PageLoading />}>
+        <BlogPage />
+      </Suspense>
+    ),
   },
   {
     path: "booking",
-    element: <BookingPage />,
+    element: (
+      <Suspense fallback={<PageLoading />}>
+        <BookingPage />
+      </Suspense>
+    ),
+  },
+  {
+    path: "/faq",
+
+    element: (
+      <Suspense fallback={<PageLoading />}>
+        <FAQPage />
+      </Suspense>
+    ),
+  },
+  {
+    path: "/terms-and-conditions",
+    element: (
+      <Suspense fallback={<PageLoading />}>
+        <TermAndConditionPage />
+      </Suspense>
+    ),
+  },
+  {
+    path: "/privacy-policy",
+    element: (
+      <Suspense fallback={<PageLoading />}>
+        <PrivacyPolicyPage />
+      </Suspense>
+    ),
+  },
+  {
+    path: "rooms/room-details/booking-details",
+    element: (
+      <Suspense fallback={<PageLoading />}>
+        <BookingDetailPage />{" "}
+      </Suspense>
+    ),
+  },
+  {
+    path: "rooms/room-details/booking-completed",
+    element: (
+      <Suspense fallback={<PageLoading />}>
+        <BookingCompletePage />{" "}
+      </Suspense>
+    ),
   },
   ...roomsRoute
 ];

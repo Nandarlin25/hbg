@@ -1,15 +1,13 @@
-import React from 'react'
-import BreadCrumb from '../components/Breadcrumb'
-import AboutUsIntro from '../components/AboutUsIntro'
-
+import React from "react";
+import AboutUsIntro from "../components/AboutUsIntro";
 
 const AboutUsPage = () => {
   return (
-    <main>
-      <BreadCrumb  currentPageTitle={"About Us"}/>
+    <div className="relative">
+        
       <AboutUsIntro />
-    </main>
-  )
-}
+    </div>
+  );
+};
 
-export default AboutUsPage
+export default AboutUsPage;

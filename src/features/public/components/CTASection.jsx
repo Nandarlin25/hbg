@@ -7,8 +7,8 @@ const CTASection = () => {
     <section>
         <Container>
             <div className='bg-formColor my-24'>
-              <div className='flex p-[62px] gap-5 justify-between items-center bg-natural-light'>
-                <div>
+              <div className='flex p-[62px] gap-5 justify-between items-center'>
+                <div >
                     <h1 className='font-heading text-4xl font-bold'>Subscribe for Exclusive <br />Content and Updates!</h1>
                     <p className='font-body text-[22px] text-secondary mt-8'>Never miss out on a great deal! Subscribe for <br /> updates on room availability and special offers.</p>
                 </div>
