@@ -1,15 +1,17 @@
-import React from 'react'
-import Container from '../../../components/Container'
-import BreadCrumb from '../components/Breadcrumb'
+import React from "react";
+import Container from "../../../components/Container";
+import BreadCrumb from "../components/Breadcrumb";
+import BlogSection from "../components/Blog/BlogCardSection";
 
 const BlogPage = () => {
   return (
     <>
-    <Container>
-      <BreadCrumb currentPageTitle={"Blog"} />
-    </Container>
+      <Container className="mt-6">
+        {/* <BreadCrumb currentPageTitle={"Blog"} /> */}
+        <BlogSection />
+      </Container>
     </>
-  )
-}
+  );
+};
 
-export default BlogPage
+export default BlogPage;
