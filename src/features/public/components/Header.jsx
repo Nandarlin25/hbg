@@ -48,6 +48,7 @@ const Headers = () => {
   useEffect(() => {
     // Update active link when location changes
     updateActiveLink();
+
   }, [location.pathname]);
 
   // Find the current header content
