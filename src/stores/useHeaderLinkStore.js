@@ -7,8 +7,9 @@ import aboutushero from "../assets/about-us/about-us-hero.jpg";
 import servicehero from "../assets/Service/service-hero.jpg";
 import contactushero from "../assets/contact/contact-us-hero.jpg";
 import bloghero from "../assets/Blog/blog-hero.jpg";
-import bookinghero from "../assets/contact/contact-us-hero.jpg";
+// import bookinghero from "../assets/contact/contact-us-hero.jpg";
 import  Faqhero from "../assets/FTPhero.png";
+import bookinghero from "../assets/Room/Booking Detail/booking hero.jpg";
 
 import { create } from "zustand";
 import { FaQ } from "react-icons/fa6";
@@ -68,6 +69,19 @@ export const useHeaderLinkStore = create(() => ({
       path: "/terms-and-conditions",
       bgimage: Faqhero,
       title: "Terms & Conditions",
+    },
+    ,
+    {
+      path: "/rooms/room-details/booking-details",
+      bgimage: bookinghero,
+      title: "Booking",
+      header: "Your Next Stay Starts Here",
+    },
+    {
+      path: "/rooms/room-details/booking-completed",
+      bgimage: null,
+      title: null,
+      header: null,
     },
   ],
 }));

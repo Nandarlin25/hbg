@@ -94,25 +94,25 @@ const Footer = () => {
             <div className="mt-4 flex space-x-4">
               <div className="bg-zinc-950 size-10 flex justify-center items-center rounded-lg">
                 <a href="#" className="hover:text-white">
-                  <i class="fa-brands fa-facebook-f text text-white text-lg"></i>
+                  <i className="fa-brands fa-facebook-f text text-white text-lg"></i>
                 </a>
               </div>
 
               <div className="bg-zinc-950 size-10 flex justify-center items-center rounded-lg ">
                 <a href="#" className="hover:text-white">
-                  <i class="fa-brands fa-instagram text text-white text-lg"></i>
+                  <i className="fa-brands fa-instagram text text-white text-lg"></i>
                 </a>
               </div>
 
               <div className="bg-zinc-950 size-10 flex justify-center items-center rounded-lg">
                 <a href="#" className="hover:text-white">
-                  <i class="fa-brands fa-twitter text text-white text-lg"></i>
+                  <i className="fa-brands fa-twitter text text-white text-lg"></i>
                 </a>
               </div>
 
               <div className="bg-zinc-950 size-10 flex justify-center items-center rounded-lg">
                 <a href="#" className="hover:text-white">
-                  <i class="fa-brands fa-linkedin-in text text-white text-lg"></i>
+                  <i className="fa-brands fa-linkedin-in text text-white text-lg"></i>
                 </a>
               </div>
             </div>

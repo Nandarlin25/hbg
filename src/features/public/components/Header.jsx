@@ -35,7 +35,7 @@ const Headers = () => {
     // Update active link when location changes
     updateActiveLink();
   }, [location.pathname]); // Dependency on location.pathname
-
+ console.log(headercontact)
   // Find the current header content
   const currentHeaderContent = headercontact.find(
     (item) => item.path === location.pathname
