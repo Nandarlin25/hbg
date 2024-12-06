@@ -76,7 +76,7 @@ const Headers = () => {
         {/* Sticky Header */}
         <nav
           className={`fixed top-0 left-0 w-full flex items-center justify-between p-4 z-10 transition-all duration-500 ${
-            sticky || !currentHeaderContent.bgimage
+            sticky || currentHeaderContent.bgimage == undefined
               ? "bg-primary"
               : "bg-transparent"
           }`}
@@ -107,16 +107,6 @@ const Headers = () => {
               </Link>
             </div>
 
-            {/* Mobile Menu Toggle Button */}
-            {/* <div className="lg:hidden">
-              <button
-                onClick={phoneToogleMenu}
-                className="text-white focus:ring-2 focus:ring-offset-2 focus:ring-primary menu-icon"
-                aria-label="Toggle Navigation"
-              >
-                <RxHamburgerMenu className="size-8 bg-primary-frame text-primary" />
-              </button>
-            </div> */}
             <div className="lg:hidden flex items-center space-x-4">
               <Link
                 to="/rooms"
@@ -189,7 +179,7 @@ const Headers = () => {
         {/* Background Section */}
         {currentHeaderContent && currentHeaderContent.bgimage && (
           <div
-            className="relative bg-cover bg-center bg-no-repeat"
+            className="relative bg-cover bg-center bg-no-repeat w-full"
             style={{
               backgroundImage: `url(${currentHeaderContent.bgimage})`,
               height: "600px",
