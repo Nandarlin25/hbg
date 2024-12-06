@@ -1,6 +1,6 @@
-import card1 from "../assets/Service/Spa & Wellness/card 1.jpeg";
-import card2 from "../assets/Service/Spa & Wellness/card 2.jpeg";
-import card3 from "../assets/Service/Spa & Wellness/card 3.jpeg";
+import card1 from "../assets/Service/Spa & Wellness/1.jpg";
+import card2 from "../assets/Service/Spa & Wellness/2.jpg";
+import card3 from "../assets/Service/Spa & Wellness/3.jpg";
 
 export const spaData = [
   {

@@ -131,7 +131,7 @@ const ContactUs = () => {
       </div>
 
       {/* Contact Form */}
-      <div className=" p-6  lg:mt-16 md:mt-14 ">
+      <div className=" p-6  lg:mt-20 ">
         <p className="font-emerald text-primary font-normal text-base text-center mb-2 lg:text-2xl">
           CONTACT WITH US
         </p>

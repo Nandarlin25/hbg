@@ -4,13 +4,15 @@ import ContactUs from "../components/contact/ContactUs";
 
 const ContactUsPage = () => {
   return (
-    <>
-      <Container>
-        
-        <ContactUs />
-      </Container>
-    </>
+
+
+    <Container>
+      <ContactUs/>
+    </Container>
+
   );
 };
 
 export default ContactUsPage;
+
+
