@@ -6,7 +6,7 @@ const BookingDetailPage = lazy(() =>
   import("../features/public/Booking/pages/BookingDetailPage")
 );
 const BookingCompletePage = lazy(() =>
-  import("../features/public/pages/BookingCompletePage")
+  import("../features/public/Booking/pages/BookingCompletePage")
 );
 
 
