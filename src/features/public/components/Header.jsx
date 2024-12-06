@@ -78,7 +78,7 @@ const Headers = () => {
         <nav
 
         className={`fixed top-0 left-0 w-full flex items-center justify-between p-4 z-10 transition-all duration-500 ${
-          sticky || (currentHeaderContent?.bgimage === undefined)? "bg-primary" : "bg-transparent" 
+          sticky || !currentHeaderContent?.bgimage ? "bg-primary" : "bg-transparent" 
         }`}
       >
         
