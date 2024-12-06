@@ -1,5 +1,3 @@
-// store.js
-
 
 import homehero from "../assets/Banner/Home hero.webp";
 import roomhero from "../assets/Banner/Room hero.webp";
@@ -53,12 +51,7 @@ export const useHeaderLinkStore = create(() => ({
       bgimage: contactushero,
      title: "Contact Us",
     },
-    {
-      path: "/booking",
-      bgimage: bookinghero,
-     title: "Booking",
-      title: "Your Next Stay Starts Here",
-    },
+   
     {
       path: "/faq",
       bgimage: Faqhero,
@@ -73,6 +66,20 @@ export const useHeaderLinkStore = create(() => ({
       path: "/terms-and-conditions",
       bgimage: Faqhero,
      title: "Terms & Conditions",
+    },
+    
+    {
+      path: "/rooms/room-details/booking-details",
+      bgimage: bookinghero,
+      title: null,
+      header: "Booking",
+      paragraph: "Your Next Stay Starts Here"
+    },
+    {
+      path: "/rooms/room-details/booking-completed",
+      bgimage: null,
+      title: null,
+      header: null,
     },
   ],
 }));
