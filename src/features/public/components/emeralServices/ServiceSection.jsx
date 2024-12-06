@@ -114,8 +114,8 @@ const ServiceSection = () => {
               onClick={() => selectService(service)}
               className={`${
                 currentService.id === service.id
-                  ? "active bg-secondary-card border text-primary py-3 lg:py-4 px-6 lg:px-8 font-emerald font-medium lg:font-semibold text-lg lg:text-xl w-full h-[80px] lg:h-[100px] leading-6 text-center"
-                  : "border text-primary py-3 lg:py-4 px-6 lg:px-8 font-emerald font-medium lg:font-semibold text-lg lg:text-xl w-full h-[80px] lg:h-[100px] leading-6 text-center"
+                  ? "active bg-secondary-card border text-primary py-3 lg:py-4 px-6 lg:px-8 font-emerald font-medium lg:font-normal text-lg lg:text-3xl  w-full h-[80px] lg:h-[100px] leading-6 text-center"
+                  : "border text-primary py-3 lg:py-4 px-6 lg:px-8 font-emerald font-medium lg:font-normal text-lg lg:text-3xl w-full h-[80px] lg:h-[100px] leading-6 text-center"
               }`}
             >
               {service.title}

@@ -1,5 +1,10 @@
 import popular1 from "../../assets/Blog/Blog-details/p1.jpeg";
 import popular2 from "../../assets/Blog/Blog-details/p2.jpeg"; 
+import popular3 from "../../assets/Blog/Blog-details/p2.jpeg"
+
+
+
+
 
 export const popularPosts = [
   {
@@ -11,7 +16,7 @@ export const popularPosts = [
   {
     title: "Outdoor and indoor pools",
     date: "5 November 2024",
-    image: popular1,
+    image: popular3,
   },
 
   {

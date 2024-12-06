@@ -24,48 +24,48 @@ export const useHeaderLinkStore = create(() => ({
     {
       path: "/rooms",
       bgimage: roomhero,
-     title: "Room",
+     header: "Room",
     },
     {
       path: "/about-us",
       bgimage: aboutushero,
-      title: "About Us",
+      header: "About Us",
     },
     {
       path: "/services",
       bgimage: servicehero,
-     title: "Service",
+     header: "Service",
     },
     {
       path: "/blog",
       bgimage: bloghero,
-     title: "Blog",
+     header: "Blog",
     },
     {
-      path: "/blog-detail",
+      path: "/blog-details",
       bgimage: bloghero,
-      title: "Blog Detail",
+      header: "Blog Detail",
     },
     {
       path: "/contact-us",
       bgimage: contactushero,
-     title: "Contact Us",
+     header: "Contact Us",
     },
    
     {
       path: "/faq",
       bgimage: Faqhero,
-     title: "FAQ",
+     header: "FAQ",
     },
     {
       path: "/privacy-policy",
       bgimage: Faqhero,
-     title: "Privacy Policy",
+     header: "Privacy Policy",
     },
     {
       path: "/terms-and-conditions",
       bgimage: Faqhero,
-     title: "Terms & Conditions",
+     header: "Terms & Conditions",
     },
     
     {
