@@ -12,11 +12,11 @@ import {
 
 const CheckAvailabilityBox = () => {
   return (
-    <div className="inline-block  md:absolute  bottom-0 md:translate-y-1/3 w-full bg-secondary-card md:bg-transparent">
+    <div className="block  md:absolute  bottom-0 md:translate-y-1/2 w-full bg-secondary-card md:bg-transparent">
     <Container>
     
       
-      <div className="md:flex justify-center lg:gap-10 items-center max-w-full   md:bg-primary-frame md:border-b-4 border-zinc-900 px-6 py-14 md:p-2 lg:p-8  ">
+      <div className="block md:flex md:justify-center lg:gap-10 md:items-center max-w-full   md:bg-primary-frame md:border-b-4 border-zinc-900 px-6 py-14 md:p-0 ">
        <div className="py-2 md:py-0 mt-8 md:mt-0">
        <div className="bg-natural-light md:bg-primary-frame md:border-r-2 border-secondary  p-[30px] md:py-0 md:px-4 flex md:block items-center justify-between">
             <p className="text-2xl lg:text-lg text-secondary ">CHECK IN</p>

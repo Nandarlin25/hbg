@@ -3,7 +3,7 @@ import PageLoading from "../components/PageLoading";
 
 
 const BookingDetailPage = lazy(() =>
-  import("../features/public/pages/BookingDetailPage")
+  import("../features/public/Booking/pages/BookingDetailPage")
 );
 const BookingCompletePage = lazy(() =>
   import("../features/public/pages/BookingCompletePage")
@@ -29,7 +29,7 @@ const AboutUsPage = lazy(() => import("../features/public/pages/AboutUsPage"));
 const ContactUsPage = lazy(() =>
   import("../features/public/pages/ContactUsPage")
 );
-const HomePage = lazy(() => import("../features/public/pages/HomePage"));
+const HomePage = lazy(() => import("../features/public/Home/page/HomePage"));
 
 const publicRoute = [
   {

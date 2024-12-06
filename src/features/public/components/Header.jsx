@@ -185,14 +185,14 @@ const Headers = () => {
         {/* Background Section */}
         {currentHeaderContent && currentHeaderContent.bgimage && (
           <div
-            className="relative bg-cover bg-center bg-no-repeat"
+            className="block md:relative bg-cover bg-center bg-no-repeat md:h-[600px]"
             style={{
               backgroundImage: `url(${currentHeaderContent.bgimage})`,
-              height: "600px",
+              // height: "600px",
             }}
           >
-            <div className="absolute "></div>
-            <div className="absolute bottom-24 lg:bottom-36 text-center w-full flex flex-col items-center space-y-4 px-6">
+            <div className="block md:absolute "></div>
+            <div className="block md:absolute bottom-24 lg:bottom-36 text-center w-full flex flex-col items-center space-y-4 px-6">
               {currentHeaderContent.title && (
                 <h1 className="text-white text-4xl lg:text-5xl font-bold font-heading drop-shadow-md">
                   {currentHeaderContent.title}
