@@ -2,6 +2,7 @@ import popular1 from "../../assets/Blog/Blog-details/p1.jpeg";
 import popular2 from "../../assets/Blog/Blog-details/p2.jpeg"; 
 import popular3 from "../../assets/Blog/Blog-details/p2.jpeg"
 
+
 export const popularPosts = [
   {
     title: "Fitness center and spa services",

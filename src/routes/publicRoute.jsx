@@ -1,4 +1,13 @@
 import { Children, lazy, Suspense } from "react";
+import PageLoading from "../components/PageLoading";
+
+
+const BookingDetailPage = lazy(() =>
+  import("../features/public/pages/BookingDetailPage")
+);
+const BookingCompletePage = lazy(() =>
+  import("../features/public/pages/BookingCompletePage")
+);
 import BlogDetailPage from "../features/public/pages/BlogDetailPage";
 
 const BookingPage = lazy(() => import("../features/auth/pages/BookingPage"));
@@ -7,9 +16,7 @@ const Rooms = lazy(() => import("../features/public/pages/Rooms"));
 const ServicesPage = lazy(() =>
   import("../features/public/pages/ServicesPage")
 );
-const RoomsDetail = lazy(() =>
-  import("../features/public/components/RoomsDetail")
-);
+
 const FAQPage = lazy(() => import("../features/public/pages/FAQPage"));
 const PrivacyPolicyPage = lazy(() =>
   import("../features/public/pages/PrivacyPolicyPage")
@@ -28,7 +35,7 @@ const publicRoute = [
   {
     index: true,
     element: (
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<PageLoading />}>
         <HomePage />
       </Suspense>
     ),
@@ -36,7 +43,7 @@ const publicRoute = [
   {
     path: "rooms",
     element: (
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<PageLoading />}>
         <Rooms />
       </Suspense>
     ),
@@ -44,15 +51,16 @@ const publicRoute = [
   {
     path: "about-us",
     element: (
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<PageLoading />}>
         <AboutUsPage />
       </Suspense>
     ),
   },
+
   {
     path: "services",
     element: (
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<PageLoading />}>
         <ServicesPage />
       </Suspense>
     ),
@@ -60,7 +68,7 @@ const publicRoute = [
   {
     path: "contact-us",
     element: (
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<PageLoading />}>
         <ContactUsPage />
       </Suspense>
     ),
@@ -68,20 +76,23 @@ const publicRoute = [
   {
     path: "blog",
     element: (
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<PageLoading />}>
         <BlogPage />
       </Suspense>
     ),
   },
   {
-    path:"blog-detail",
-    element:<BlogDetailPage/>
+    path: "blog-details",
+    element: (
+      <Suspense fallback={<PageLoading />}>
+        <BlogDetailPage />
+      </Suspense>
+    ),
   },
   {
     path: "booking",
-
     element: (
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<PageLoading />}>
         <BookingPage />
       </Suspense>
     ),
@@ -90,7 +101,7 @@ const publicRoute = [
     path: "/faq",
 
     element: (
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<PageLoading />}>
         <FAQPage />
       </Suspense>
     ),
@@ -98,7 +109,7 @@ const publicRoute = [
   {
     path: "/terms-and-conditions",
     element: (
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<PageLoading />}>
         <TermAndConditionPage />
       </Suspense>
     ),
@@ -106,8 +117,24 @@ const publicRoute = [
   {
     path: "/privacy-policy",
     element: (
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<PageLoading />}>
         <PrivacyPolicyPage />
+      </Suspense>
+    ),
+  },
+  {
+    path: "rooms/room-details/booking-details",
+    element: (
+      <Suspense fallback={<PageLoading />}>
+        <BookingDetailPage />{" "}
+      </Suspense>
+    ),
+  },
+  {
+    path: "rooms/room-details/booking-completed",
+    element: (
+      <Suspense fallback={<PageLoading />}>
+        <BookingCompletePage />{" "}
       </Suspense>
     ),
   },
