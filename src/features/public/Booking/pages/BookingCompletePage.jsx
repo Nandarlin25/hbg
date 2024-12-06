@@ -24,7 +24,7 @@ const BookingCompletePage = () => {
           <OrderPrintSection />
           <PackageDetailSection/>
          <BookedRoomInfoCard/>
-          <div className="my-14 m lg:mt-24 md:mb-0">
+          <div className="my-14 lg:mt-24 ">
             <div className="md:grid md:grid-cols-12 md:gap-6 lg:gap-16 ">
             <CustomerDetailCard/>
 

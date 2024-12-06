@@ -33,7 +33,7 @@ const PackageDetailSection = () => {
       </div>
     </div>
     <div className="md:flex md:flex-col items-center  w-full justify-center md:gap-2 lg:gap-4  mt-12 md:mt-0 ">
-      <div className="p-4  lg:p-8  bg-primary-frame text-center w-full lg:bg-white border border-dashed border-secondary    rounded-md md:rounded-none">
+      <div className="p-4  md:p-2 lg:p-8  bg-primary-frame text-center w-full lg:bg-white border border-dashed border-secondary    rounded-md md:rounded-none">
         <p className="font-body  text-2xl md:text-[14px] lg:text-2xl text-secondary text-nowrap">
           Booking Reference
         </p>

@@ -1,5 +1,5 @@
 import React from 'react'
-import PaymentMethodSection from '../../components/PaymentMethodSection'
+import PaymentMethodSection from '../components/PaymentMethodSection'
 import usePaymentMethodStore from '../../../../stores/usePaymentMethodStore';
 import { Link } from 'react-router-dom';
 import BookingTotalCard from './BookingTotalCard';
@@ -107,7 +107,7 @@ const BookingDetailForm = () => {
         />
       </div>
     </div>
-    <div className="mt-10 w-full">
+    <div className="mt-10  w-full">
       <div className="flex flex-col ">
         <label htmlFor="" className="text-primary text-[14px] md:text-[12px] lg:text-[22px] mb-3">
           Request
@@ -124,7 +124,7 @@ const BookingDetailForm = () => {
         </p>
       </div>
     </div>
-    <div className="mt-16">
+    <div className="mt-8 md:mt-16">
       <h4 className="text-primary font-heading font-bold text-2xl md:text-3xl ">
         Select Payment Method:
       </h4>
@@ -139,10 +139,10 @@ const BookingDetailForm = () => {
             <ReservationSupportCard />
     </div>
     <div className="flex items-center gap-2 mt-8 ">
-      <Link to="/rooms/room-details/booking-completed" className="text-xl font-body text-primary-frame bg-primary px-8 py-2 md:px-4 lg:px-8 lg:py-2 rounded-md">
+      <Link to="/rooms/room-details/booking-completed" className="text-[16px] md:text-[12px] lg:text-xl font-body text-primary-frame bg-primary px-8 py-2 md:py-0 lg:px-8 lg:py-2 rounded-md">
         Book Now
       </Link>
-      <button className="text-xl font-body text-primary border border-primary px-8 py-2 md:px-4 lg:px-8 lg:py-2 rounded-md">
+      <button className="text-[16px] md:text-[12px] lg:text-xl font-body text-primary border border-primary px-8 py-2 md:py-0 md:px-8 lg:py-2 rounded-md">
         Cancel
       </button>
     </div>

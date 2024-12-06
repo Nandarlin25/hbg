@@ -10,7 +10,7 @@ const ReservationSupportCard = () => {
               </div>
               <div className="p-[22px] bg-white  ">
               
-                <div className="w-full flex items-center gap-3  mt-4 md:mt-2 lg:mt-8">
+                <div className="w-full flex items-center gap-3  lg:mt-8">
                   <span
                     className=" font-body font-bold text-lg  md:text-[12px] lg:text-[22px]"
                   >
@@ -24,7 +24,7 @@ const ReservationSupportCard = () => {
                   </span>
                 </div>
                
-                <div className="w-full flex items-center gap-3  mt-2 ">
+                <div className="w-full flex items-center gap-3  mt-2 md:mt-0 lg:mt-2 ">
                   <span
                     scope="col"
                     className=" font-body font-bold text-lg  md:text-[12px] lg:text-[22px] "
@@ -39,9 +39,9 @@ const ReservationSupportCard = () => {
                   </span>
                 </div>
                 <span className="font-body text-secondary text-lg  md:text-[12px] lg:text-[22px] mt-2 ">emeraldhotel@gmail.com</span>
-                <div className="mt-8 md:mt-4 lg:mt-8">
+                <div className="mt-8 md:mt-2 lg:mt-8">
                   <span className="font-bold font-body text-[22px] md:text-[12px] lg:text-[22px]">Address</span>
-                  <p className="font-body text-lg  md:text-[12px] lg:text-[22px] text-secondary mt-3 tracking-wide">Kabar Aye Pagoda Rd, Yangon 11081, Myanmar (Burma)</p>
+                  <p className="font-body text-lg  md:text-[12px] lg:text-[22px] text-secondary mt-3 md:mt-0 lg:mt-3 tracking-wide">Kabar Aye Pagoda Rd, Yangon 11081, Myanmar (Burma)</p>
                 </div>
                 
               </div>

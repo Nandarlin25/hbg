@@ -5,7 +5,7 @@ import RoomDetail1 from "../../../../assets/Room/Room-details/Room 1.jpg";
 import { HiCalendar } from "react-icons/hi2";
 import { HiUser, HiUserCircle } from "react-icons/hi";
 import { Link } from "react-router-dom";
-import PaymentMethodSection from "../../components/PaymentMethodSection";
+import PaymentMethodSection from "../components/PaymentMethodSection";
 import ReservationSupportCard from "../components/ReservationSupportCard";
 import BookingRoomDetailCard from "../components/BookingRoomDetailCard";
 import BookingTotalCard from "../components/BookingTotalCard";
@@ -17,8 +17,8 @@ const BookingDetailPage = () => {
   return (
     <section className="bg-primary-frame">
       <Container>
-        <div className="pt-24 pb-14 md:pb-48 md:grid md:grid-cols-3 gap-5 px-6 ">
-          <div className="w-full md:col-span-2 lg:pr-24">
+        <div className="pt-24 pb-14 md:pb-48 md:grid md:grid-cols-3 gap-2 px-6 ">
+          <div className="w-full md:col-span-2 pr-0 lg:pr-24 md:pr-10 ">
             <h4 className="font-heading text-primary text-2xl md:text-[20px] lg:text-3xl font-bold">
               Billing Details
             </h4>
