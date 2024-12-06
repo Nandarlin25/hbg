@@ -39,7 +39,7 @@ const ServiceSection = () => {
           </div>
           <div className=" col-span-1 bg-secondary-card mt-10 md:mt-0 text-center  h-48 md:h-auto flex flex-col items-center justify-center">
             <img src={`${sauna}`}alt="" className="w-[82px] h-[82px]  md:w-[50px] md:h-[50px] lg:w-[82px] lg:h-[82px]  mx-auto" /> 
-            <p className='font-body text-secondary font-bold text-lg md:text-[12px] lg:text-[22px]mt-4 text-nowrap'>SAUNA ROOM</p>
+            <p className='font-body text-secondary font-bold text-lg md:text-[12px] lg:text-[22px] mt-4 text-nowrap'>SAUNA ROOM</p>
           </div>
           <div className=" col-span-1 bg-secondary-card mt-10 md:mt-0 text-center h-48 md:h-auto flex flex-col items-center justify-center">
             <img src={`${exercise}`}alt="" className="w-[82px] h-[82px]  md:w-[50px] md:h-[50px] lg:w-[82px] lg:h-[82px]  mx-auto" />
