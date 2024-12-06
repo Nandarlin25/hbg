@@ -7,7 +7,7 @@ const FitnessSection = () => {
     <section className=" mx-auto  py-8">
       <div className="grid lg:grid-cols-2 gap-8 items-center">
         {/* Image Section */}
-        <div className="relative w-full max-w-[589px] h-[400px] mx-auto shadow-lg hover:scale-105 overflow-hidden hover:shadow-lg transition-transform">
+        <div className="relative w-full max-w-[589px] h-[400px] md:h-[300px] mx-auto shadow-lg hover:scale-105 overflow-hidden hover:shadow-lg transition-transform">
           <img
             src={image1}
             alt="Luxury buffet station"
@@ -51,14 +51,14 @@ const FitnessSection = () => {
           </div>
         </div>
       </div>
-      <div className="mt-[150px]">
-        <h2 className="text-5xl font-bold mb-12 text-center leading-10 font-heading  text-primary ">
+      <div className="mt-[90px]">
+        <h2 className="text-4xl font-bold mb-12 text-center leading-10 font-heading  text-primary ">
           Gym And Yoga At The Hotel
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {gymData.map((gym) => (
             <div
-              key={gym}
+              key={gym.id}
               className="mb-9 rounded-lg shadow-lg hover:scale-105 overflow-hidden hover:shadow-lg transition-transform"
             >
               {/* Image Section */}
