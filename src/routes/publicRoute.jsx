@@ -3,10 +3,10 @@ import PageLoading from "../components/PageLoading";
 
 
 const BookingDetailPage = lazy(() =>
-  import("../features/public/pages/BookingDetailPage")
+  import("../features/public/Booking/pages/BookingDetailPage")
 );
 const BookingCompletePage = lazy(() =>
-  import("../features/public/pages/BookingCompletePage")
+  import("../features/public/Booking/pages/BookingCompletePage")
 );
 import BlogDetailPage from "../features/public/pages/BlogDetailPage";
 

@@ -60,7 +60,9 @@ const FeatureSection = () => {
             </div>
           </div>
 
+
           <div className="w-full mb-24 md:mt-0 lg:mt-14">
+
             <div className="md:flex flex-col justify-center items-center px-6">
               <h2 className="font-caveat text-primary text-xl md:text-lg lg:text-3xl">
                 Welcome to Emerald
