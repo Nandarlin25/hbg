@@ -28,37 +28,39 @@ const BlogNewSletter = () => {
             </div>
 
             {/* Form Section */}
+           
             <form
-              onSubmit={handleSubmit(blogEmailSubmit)}
-              className="lg:w-1/2   p-6 "
-            >
-              <div className="relative flex flex-col sm:flex-row items-center gap-4">
-                {/* Input Field */}
-                <label htmlFor="email" className="sr-only">
-                  Email address
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  placeholder="Your Email Address"
-                  {...register("email", { required: "Email is required" })}
-                  className="w-full py-3 px-5 text-base text-gray-900 bg-white rounded-lg shadow-md border border-gray-300 focus:ring-4 focus:ring-blue-200 focus:border-blue-500 dark:bg-gray-800 dark:border-gray-600 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 transition-all"
-                />
-                {errors.email && (
-                  <p className="text-red-500 text-sm mt-2">
-                    {errors.email.message}
-                  </p>
-                )}
+  onSubmit={handleSubmit(blogEmailSubmit)}
+  className="lg:w-1/2 p-6   rounded-lg "
+>
+  <div className="relative flex items-center">
+    {/* Input Field */}
+    <label htmlFor="email" className="sr-only">
+      Email address
+    </label>
+    <input
+      type="email"
+      id="email"
+      placeholder="Enter your email"
+      {...register("email", { required: "Email is required" })}
+      className="flex-grow py-4 pl-6 pr-16 text-base text-gray-900 bg-gray-50 rounded-lg shadow-md border border-gray-300 focus:ring-4 focus:ring-blue-300 focus:border-blue-500 dark:bg-gray-700 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 transition-all"
+    />
+    {errors.email && (
+      <p className="absolute top-full left-0 mt-2 text-red-500 text-sm">
+        {errors.email.message}
+      </p>
+    )}
 
-                {/* Subscribe Button */}
-                <button
-                  type="submit"
-                  className="absolute bg-primary  top-1/2 -translate-y-1/2 right-2 py-3 px-6 text-sm md:text-base font-semibold text-white rounded-lg "
-                >
-                  Subscribe
-                </button>
-              </div>
-            </form>
+    {/* Subscribe Button */}
+    <button
+      type="submit"
+      className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-primary text-primary-frame transition-all py-3 px-8 text-sm md:text-base font-semibold  rounded-lg shadow-lg focus:outline-none focus:ring-4 focus:ring-blue-300"
+    >
+      Subscribe
+    </button>
+  </div>
+</form>
+
           </div>
         </div>
       </section>

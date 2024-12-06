@@ -4,11 +4,8 @@ import usePaymentMethodStore from '../../../stores/usePaymentMethodStore';
 import { Link } from 'react-router-dom';
 
 const BookingDetailForm = () => {
-    const { paymentMethods } = usePaymentMethodStore();
-
   return (
-  
-  <form action="">
+    <form action="">
     <div className="mt-8 flex gap-[19px] ">
       <div className="flex flex-col w-full">
         <label htmlFor="" className="text-primary text-[22px] mb-3">

@@ -5,7 +5,7 @@ import aboutushero from "../assets/Banner/about us hero .webp";
 import servicehero from "../assets/Banner/service hero.webp";
 import contactushero from "../assets/Banner/contact us hero.webp";
 import bloghero from "../assets/Banner/blog hero.webp";
-import bookinghero from "../assets/Banner/Room hero.webp";
+import bookinghero from "../assets/Room/Booking Detail/booking hero.jpg";
 import  Faqhero from "../assets/FTPhero.png";
 
 import { create } from "zustand";
@@ -42,7 +42,7 @@ export const useHeaderLinkStore = create(() => ({
      header: "Blog",
     },
     {
-      path: "/blog-detail",
+      path: "/blog-details",
       bgimage: bloghero,
       header: "Blog Detail",
     },

@@ -3,7 +3,6 @@ import { HiCalendar } from 'react-icons/hi'
 import RoomDetail1 from "../../../assets/Room/Room-details/Room 1.jpg";
 import { HiUserCircle } from 'react-icons/hi2';
 
-
 const BookingRoomDetailCard = () => {
   return (
     <div className="mt-16">

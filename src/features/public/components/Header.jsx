@@ -76,12 +76,12 @@ const Headers = () => {
       <div>
         {/* Sticky Header */}
         <nav
-          className={`fixed top-0 left-0 w-full flex items-center justify-between p-4 z-10 transition-all duration-500 ${
-            sticky || !currentHeaderContent.bgimage
-              ? "bg-primary"
-              : "bg-transparent"
-          }`}
-        >
+
+        className={`fixed top-0 left-0 w-full flex items-center justify-between p-4 z-10 transition-all duration-500 ${
+          sticky || (currentHeaderContent?.bgimage === undefined)? "bg-primary" : "bg-transparent" 
+        }`}
+      >
+        
           <Container className={"flex justify-between items-center px-7"}>
             <div className="text-white font-bold italic tracking-wide">
               <Link to="/" className="flex items-center gap-2">
@@ -190,14 +190,17 @@ const Headers = () => {
         {/* Background Section */}
         {currentHeaderContent && currentHeaderContent.bgimage && (
           <div
+
             className="md:relative md:bg-cover bg-center bg-no-repeat md:h-[400px] lg:h-[600px]"
+
             style={{
               backgroundImage: `url(${currentHeaderContent.bgimage})`,
-              
+              // height: "600px",
             }}
           >
             <div className="md:absolute "></div>
             <div className="md:absolute bottom-24 w-full lg:bottom-36 text-center  flex flex-col items-center py-12 md:pt-0 md:space-y-4 px-6">
+
               {currentHeaderContent.title && (
                 <h3 className="text-white text-sm md:text-3xl lg:text-4xl font-normal font-caveat">
                   {currentHeaderContent.title}
