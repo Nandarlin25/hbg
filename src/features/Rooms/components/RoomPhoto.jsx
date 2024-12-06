@@ -5,7 +5,7 @@ import img3 from '../../../assets/Room/Room-details/Room 3.jpeg'
 import Container from '../../../components/Container'
 
 
-const RoomPhoto = () => {
+const RoomPhoto = ({divWidth}) => {
   const images=[
     {
       id:1,
@@ -20,7 +20,6 @@ const RoomPhoto = () => {
       image:img3
     }
   ]
-
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
@@ -34,49 +33,48 @@ const RoomPhoto = () => {
     );
   };
 
-
+console.log(divWidth);
   return (
-    <Container><div className=' lg:py-[72px] md:py-[40px] py-[24px] relative'>
-        
-          
-    <div id="carousel" className="relative w-full" data-carousel="static">
-<div className="relative lg:h-[550px] lg:rounded-[40px] md:rounded-[30px] rounded-[20px] md:h-80 h-72 w-full">
-{/* Slides */}
-<div className="flex duration-700 ease-in-out" data-carousel-item>
-  <button type="button" onClick={prevSlide} className="absolute lg:top-[260px] top-[77px] border border-secondary-card md:top-[145px] lg:-left-16 md:-left-6 -left-2 z-30 flex items-center justify-center lg:w-10 lg:h-10 w-6 h-6 bg-white rounded-full shadow-md -translate-y-1/2 hover:bg-gray-200" data-carousel-prev>
-    <span className="sr-only">Previous</span>
-    <svg aria-hidden="true" className="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-    </svg>
-  </button>
-  <button type="button" onClick={nextSlide} className="absolute lg:top-[260px] md:top-[145px] top-[77px] border-secondary-card lg:-right-16 md:-right-6 -right-2 z-30 flex items-center justify-center lg:w-10 lg:h-10 w-6 h-6 bg-white rounded-full shadow-md -translate-y-1/2 hover:bg-gray-200" data-carousel-next>
-    <span className="sr-only">Next</span>
-    <svg aria-hidden="true" className="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-    </svg>
-  </button>
-  <div className=' w-full'>
-    {
-      images.map((image)=>{
-        return(
-          <div className='w-full' key={image.id}>
-            <img src={images[currentIndex].image} alt={`Slide ${currentIndex + 1}`} className="absolute block w-full object-cover lg:h-[540px] md:h-[290.64px] h-[160px]  lg:rounded-tl-[90px] md:rounded-tl-[70px] rounded-tl-[30px] lg:rounded-br-[90px] md:rounded-br-[70px] rounded-br-[30px]" />
+    <div className='relative'>
+          <div>
+            <button type="button" onClick={prevSlide} className="absolute z-0 lg:top-[330px] md:top-[145px] top-[77px] border-secondary-card lg:-left-2 md:-left-3 -left-2 flex items-center justify-center lg:w-10 lg:h-10 w-6 h-6 bg-white rounded-full shadow-md -translate-y-1/2 hover:bg-gray-200" data-carousel-prev>
+            <span className="sr-only">Previous</span>
+            <svg aria-hidden="true" className="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+          <button type="button" onClick={nextSlide} className="absolute z-0 lg:top-[330px] md:top-[145px] top-[77px] border-secondary-card lg:-right-2 md:-right-3 -right-2 flex items-center justify-center lg:w-10 lg:h-10 w-6 h-6 bg-white rounded-full shadow-md -translate-y-1/2 hover:bg-gray-200" data-carousel-next>
+            <span className="sr-only">Next</span>
+            <svg aria-hidden="true" className="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
           </div>
-        )
-      })
-    }
-    
-  </div>
-  
-  </div>
-</div>
-</div>
-
-
+      <div className={`w-full md:w-[768px] sm:w-[640px]  lg:w-[1024px] xl:w-[1280px] overflow-x-hidden mx-auto relative -z-0 `}>
+      
           
-        
+  <div className='lg:py-[72px] md:py-[40px] w-full py-[24px] flex flex-col justify-items-center relative'>
+    <div id="carousel" className="relative w-full flex justify-center" data-carousel="static">
+      <div className="relative lg:h-[550px]  lg:rounded-[40px] md:rounded-[30px] rounded-[20px] md:h-80 h-72 w-full">
+        {/* Slides */}
+        <div className={` flex duration-700 w-full ease-in-out`} data-carousel-item>
+          
+          <div className='w-full'>
+            {images.map((image) => {
+              return (
+                <div key={image.id}>
+                  <img src={images[currentIndex].image} alt={`Slide ${currentIndex + 1}`} className="absolute w-full block  object-cover lg:h-[540px] md:h-[290.64px] h-[160px] lg:rounded-tl-[90px] md:rounded-tl-[70px] rounded-tl-[30px] lg:rounded-br-[90px] md:rounded-br-[70px] rounded-br-[30px]" />
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
     </div>
-    </Container>
+  </div>
+</div>
+    </div>
+
   )
 }
 

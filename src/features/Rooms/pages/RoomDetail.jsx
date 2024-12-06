@@ -5,10 +5,10 @@ import RoomDetailSection from '../components/RoomDetailSection'
 
 const RoomDetail = () => {
   return (
-    <>
+    <div className=''>
         <BreadCrumb currentPageTitle={"Rooms"} />
         <RoomDetailSection/>
-    </>
+    </div>
   )
 }
 

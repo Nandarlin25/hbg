@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import RoomPhoto from './RoomPhoto'
 import Container from '../../../components/Container'
 import bed from '../../../assets/Room/Booking Detail/icons/bed.png'
@@ -11,12 +11,27 @@ import width from '../../../assets/Room/Booking Detail/icons/width.png'
 
 const RoomDescription = () => {
 
+    const [divWidth, setDivWidth] = useState(0);
+    
+    const divRef = useRef(null); // Create a ref for the element
+
+    useEffect(() => {
+      
+        const rect = divRef.current.getBoundingClientRect();
+        const dWidth=rect.width;
+        setDivWidth(dWidth);
+    }, []); 
+
+    console.log(divWidth);
+   
+
+  
     
 
   return (
-    <section className='font-emerald lg:pb-[30px] md:pb-[10px] ' id="description">
-        <Container>
-            <div className='grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1'>
+    <section className='font-emerald lg:pb-[30px] md:pb-[10px] '  id="description">
+        <Container >
+            <div className='grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 my-div' ref={divRef} >
                 <div className="lg:col-span-2 md:col-span-2 col-span-1 lg:pe-52 md:pe-52 pe-10 xl:text-[24px] lg:text-[24px] md:text-[12px] text-zinc-500 leading-[32px] tracking-[0.32px]">
                     <p className='pb-9'>
                         A luxury standard room offers an elegant blend of comfort and sophistication, featuring
@@ -58,9 +73,10 @@ const RoomDescription = () => {
                 
                     </div>
                 </div>
-                <RoomPhoto/>
+                
             </div>
         </Container>
+        <RoomPhoto divWidth={divWidth}/>
     </section>
   )
 }

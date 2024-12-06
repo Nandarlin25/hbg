@@ -69,7 +69,7 @@ const RoomsCard = ({index,room}) => {
                     
                 </div>
                 <div className=' flex flex-grow items-center lg:text-lg md:text-[12px] text-[12px] md:pt-2 pt-2'>
-                    <Link to={`/rooms/${room.id}`} className=' lg:w-[200px] lg:h-[48px] md:w-[119px] md:h-[32px] w-[127px] h-[32px] bg-primary text-white text-center py-3 rounded-md'>Room Detail</Link>
+                    <Link to={`/rooms/room-details`} className=' lg:w-[200px] lg:h-[48px] md:w-[119px] md:h-[32px] w-[127px] h-[32px] bg-primary text-white text-center py-3 rounded-md'>Room Detail</Link>
                 </div>
             </div>
         </div>

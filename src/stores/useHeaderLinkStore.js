@@ -27,11 +27,6 @@ export const useHeaderLinkStore = create(() => ({
      title: "Room",
     },
     {
-      path: "/rooms/detail",
-      bgimage: roomhero,
-      title: "Room Details",
-    },
-    {
       path: "/about-us",
       bgimage: aboutushero,
       title: "About Us",
@@ -86,5 +81,11 @@ export const useHeaderLinkStore = create(() => ({
       title: null,
       header: null,
     },
+    {
+      path: "/rooms/room-details",
+      bgimage: bloghero,
+      title: null,
+      header: null,
+    }
   ],
 }));
