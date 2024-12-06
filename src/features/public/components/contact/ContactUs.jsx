@@ -1,10 +1,9 @@
-import React from 'react';
-import { GoLocation } from 'react-icons/go';
-import { PiCallBell } from 'react-icons/pi';
-import { TbWorld } from 'react-icons/tb';
-import { Link } from 'react-router-dom';
-import ContactForm from './ContactForm';
-
+import React from "react";
+import { GoLocation } from "react-icons/go";
+import { PiCallBell } from "react-icons/pi";
+import { TbWorld } from "react-icons/tb";
+import { Link } from "react-router-dom";
+import ContactForm from "./ContactForm";
 
 const ContactUs = () => {
   return (
@@ -57,12 +56,30 @@ const ContactUs = () => {
                   <h3 className="text-bold font-bold font-heading mb-2 text-primary text-lg">
                     Reservations
                   </h3>
-                  <p className="font-body text-secondary font-normal text-base">
-                    Phone: +99 (0) 344 956 4050{" "}
-                  </p>
-                  <p className="font-body text-secondary font-normal text-base">
-                    Email: emerald1806@gmail.com
-                  </p>
+
+                  <div className="flex items-center gap-3">
+                    <p className="font-body text-secondary font-normal text-base">
+                      Phone:
+                    </p>
+                    <a
+                      href="tel:+993449564050"
+                      className="font-body text-secondary font-normal text-base"
+                    >
+                      +99 (0) 344 956 4050
+                    </a>
+                  </div>
+
+                  <div className="flex items-center gap-3">
+                    <p className="font-body text-secondary font-normal text-base">
+                      Email:
+                    </p>
+                    <a
+                      href="mailto:emerald1806@gmail.com"
+                      className="font-body text-secondary font-normal text-base"
+                    >
+                      emerald1806@gmail.com
+                    </a>
+                  </div>
                 </div>
               </div>
 
@@ -121,76 +138,12 @@ const ContactUs = () => {
           <h2 className="text-bold font-bold font-heading mb-2 text-primary text-lg text-center mb-6">
             Do you have any Wishes or Questions?
           </h2>
-          {/* <form className="space-y-6">
-            <div className="grid sm:grid-cols-2 gap-6">
-              <div>
-                <label htmlFor="name" className="block mb-2 text-gray-400">
-                  NAME*
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  placeholder="Your Name"
-                  className="w-full p-4 stroke-border text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400"
-                />
-              </div>
-              <div>
-                <label htmlFor="email" className="block mb-2 text-gray-400">
-                  EMAIL*
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  placeholder="Email Address"
-                  className="w-full p-4 stroke-border text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400"
-                />
-              </div>
-            </div>
-            <div>
-              <label htmlFor="phone" className="block mb-2 text-gray-400">
-                Phone Number*
-              </label>
-              <input
-                type="tel"
-                id="phone"
-                placeholder="Phone Number"
-                className="w-full p-4 stroke-border text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400"
-              />
-            </div>
-            <div>
-              <label htmlFor="message" className="block mb-2 text-gray-400">
-                Message*
-              </label>
-              <textarea
-                id="message"
-                placeholder="Your Message..."
-                rows={5}
-                className="w-full p-4 stroke-border text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400"
-              ></textarea>
-            </div>
-            <div className="flex items-center space-x-4">
-              <input
-                type="checkbox"
-                id="consent"
-                className="w-5 h-5 text-secondary stroke-border border-gray-600 rounded focus:ring-2 focus:ring-yellow-400"
-              />
-              <label htmlFor="consent" className="text-gray-400">
-                I consent to Emerald Hotel collecting my details through this
-                form.
-              </label>
-            </div>
-            <button
-              type="submit"
-              className="w-full bg-primary py-3 text-white font-medium rounded-lg hover:bg-yellow-500 transition"
-            >
-              Send A Message
-            </button>
-          </form> */}
-          <ContactForm/>
+         
+          <ContactForm />
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default ContactUs;

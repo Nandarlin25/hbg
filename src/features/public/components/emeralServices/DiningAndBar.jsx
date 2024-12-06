@@ -3,8 +3,8 @@ import { dingindData } from '../../../../data/hotelData';
 
 const DiningAndBar = () => {
   return (
-    <div className="mt-[150px]">
-      <h2 className="text-5xl font-bold mb-12 text-center leading-10 font-heading  text-primary ">
+    <div className="mt-[100px]">
+      <h2 className="text-4xl font-bold mb-12 text-center leading-10 font-heading  text-primary ">
         The Ultimate Dining & Bar Experience
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
