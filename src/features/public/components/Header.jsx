@@ -15,7 +15,7 @@ import test from "../../../assets/test.jpg"
 
 const Headers = () => {
   const [sticky, setSticky] = useState(false);
-  const location = useLocation();
+  const location =useLocation();
   const { headercontact } = useHeaderLinkStore();
   const { navLinks, activeLink } = useHeaderNavStore();
   const [isMenuOpen, setIsMenuOpen] = useState(false);

@@ -81,5 +81,11 @@ export const useHeaderLinkStore = create(() => ({
       title: null,
       header: null,
     },
+    {
+      path: "/rooms/room-details",
+      bgimage: bloghero,
+      title: null,
+      header:" Room Detail",
+    }
   ],
 }));
