@@ -27,13 +27,13 @@ const AboutUsIntro = () => {
   return (
     <main className="bg-zinc-50">
       <Container>
-        <div className="mx-auto p-5 mb-2 max-w-screen-lg">
+        <div className="mx-auto p-5 mb-2 max-w-screen-lg mt-6">
           <div className="text-star-solid flex justify-center items-center gap-3 mb-3">
-            <i class="fa-solid fa-star text-xl"></i>
-            <i class="fa-solid fa-star text-xl"></i>
-            <i class="fa-solid fa-star text-xl"></i>
-            <i class="fa-solid fa-star text-xl"></i>
-            <i class="fa-solid fa-star text-xl"></i>
+            <i className="fa-solid fa-star text-xl"></i>
+            <i className="fa-solid fa-star text-xl"></i>
+            <i className="fa-solid fa-star text-xl"></i>
+            <i className="fa-solid fa-star text-xl"></i>
+            <i className="fa-solid fa-star text-xl"></i>
           </div>
           <h3 className="text-center font-caveat text-2xl">
             Welcome to Emerald
