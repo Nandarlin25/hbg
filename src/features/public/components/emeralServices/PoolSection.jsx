@@ -50,27 +50,28 @@ const PoolSection = () => {
           </div>
         </div>
       </div>
-
-      <div className="grid lg:grid-cols-2 gap-8 md:gap-4 items-center">
+      <div className="grid lg:grid-cols-2 gap-8 items-center md:mb-6">
         {/* Text Section */}
-        <div className="relative w-full max-w-[589px] h-[400px] md:h-[300px] mx-auto">
+        <div className="lg:pl-12 mt-6">
           {/* Title */}
-          <h2 className="text-4xl font-bold font-heading w-[400px] text-primary leading-10 mt-2 mb-6">
+          <h2 className="text-4xl font-bold font-heading text-primary leading-10 mt-2 mb-6">
             Relax and Refresh at Our Swimming Pool
           </h2>
 
           {/* Description */}
-          <p className="text-2xl font-heading font-normal leading-8 text-secondary mt-2 mb-6">
-            Take a refreshing dip in our swimming pool, an inviting oasis
-            designed for relaxation and enjoyment. 
-          </p>
-          <p className="text-2xl font-heading font-normal leading-8 text-secondary">
-            Take a refreshing dip in our swimming pool, an inviting oasis
-            designed for relaxation and enjoyment. 
-          </p>
+          <div>
+            <p className="text-2xl font-heading font-normal leading-8 text-secondary pb-3">
+              Take a refreshing dip in our swimming pool, an inviting oasis
+              designed for relaxation and enjoyment. 
+            </p>
+            <p className="text-2xl font-heading font-normal leading-8 text-secondary">
+              Take a refreshing dip in our swimming pool, an inviting oasis
+              designed for relaxation and enjoyment. 
+            </p>
+          </div>
         </div>
         {/* Image Section */}
-        <div className="relative w-full max-w-[589px] h-[400px]  mx-auto hover:scale-105 overflow-hidden hover:shadow-sm transition-transform ">
+        <div className="relative w-full max-w-[589px] h-[400px] mx-auto hover:scale-105 overflow-hidden hover:shadow-sm transition-transform">
           <img
             src={image2}
             alt="Luxury buffet station"

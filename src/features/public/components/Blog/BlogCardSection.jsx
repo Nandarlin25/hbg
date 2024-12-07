@@ -7,20 +7,22 @@ import BlogNewSletter from "./BlogNewSletter";
 const BlogSection = () => {
   return (
     <>
-      <div className="container mx-auto py-10">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-14">
         {/* Grid Layout */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {blogcard.map((blog, index) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {blogcard.map((blog) => (
             <div
-              key={index}
-              className="bg-white mb-9 rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl"
+              key={blog}
+              className="bg-white mb-9 rounded-lg shadow-lg hover:scale-105 overflow-hidden hover:shadow-lg transition-transform border"
             >
               {/* Image Section */}
-              <img
-                src={blog.image}
-                alt={blog.title}
-                className="w-full h-64 object-cover"
-              />
+              <div className="relative h-[350px] w-full p-4">
+                <img
+                  src={blog.image}
+                  alt={blog.title}
+                  className="object-cover w-[380px] h-[330px] rounded-lg"
+                />
+              </div>
 
               {/* Content Section */}
               <div className="p-6">
@@ -31,7 +33,7 @@ const BlogSection = () => {
                   {blog.paragraph}
                 </p>
                 <Link
-                  to="/blog-detail"
+                  to="/blog-details"
                   className="text-primary mt-4 inline-block font-medium hover:underline"
                 >
                   Read More
@@ -52,3 +54,4 @@ const BlogSection = () => {
 };
 
 export default BlogSection;
+ 

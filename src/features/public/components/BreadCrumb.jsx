@@ -76,22 +76,25 @@ import { HiChevronRight } from "react-icons/hi";
 
 const BreadCrumb = ({ currentPageTitle }) => {
   return (
-    <div className=" py-3 rounded-lg shadow-lg">
-      <nav aria-label="Breadcrumb" className="text-center">
-        <ol className="flex justify-center items-center space-x-4">
+    <div className=" py-1 md:py-3 rounded-lg shadow-lg">
+      <nav aria-label="Breadcrumb" className="">
+        <ol className="flex flex-wrap  justify-center items-end space-x-1 md:space-x-4">
           <li>
             <Link
               to="/"
-              className="text-xl font-emerald font-medium text-white transition-transform transform hover:scale-105 hover:text-indigo-100"
+              className="text-xs md:text-xl font-emerald font-medium text-white transition-transform transform hover:scale-105 hover:text-indigo-100"
             >
               Home
             </Link>
           </li>
-          <HiChevronRight className="text-white text-xl" />
-          <li className="text-xl font-emerald font-medium text-white transition-transform transform hover:scale-105 hover:text-indigo-100 ">
-            {currentPageTitle}
+          <li className="">
+          <HiChevronRight className="text-white text-md text-end md:text-xl mb-0.5" />
+
           </li>
-        </ol>
+          <li >
+           <span className="text-xs md:text-xl font-emerald font-medium text-white transition-transform transform hover:scale-105 hover:text-indigo-100 ">{currentPageTitle}</span>
+          </li>
+        </ol> 
       </nav>
     </div>
   );
