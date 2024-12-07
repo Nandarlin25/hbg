@@ -108,16 +108,6 @@ const Headers = () => {
               </Link>
             </div>
 
-            {/* Mobile Menu Toggle Button */}
-            {/* <div className="lg:hidden">
-              <button
-                onClick={phoneToogleMenu}
-                className="text-white focus:ring-2 focus:ring-offset-2 focus:ring-primary menu-icon"
-                aria-label="Toggle Navigation"
-              >
-                <RxHamburgerMenu className="size-8 bg-primary-frame text-primary" />
-              </button>
-            </div> */}
             <div className="lg:hidden flex items-center space-x-4">
               <Link
                 to="/rooms"
