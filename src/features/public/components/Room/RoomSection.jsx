@@ -1,6 +1,7 @@
 import React from 'react'
 import RoomSpecialOffer from './RoomSpecialOffer'
 import OurRooms from './OurRooms'
+import CTASection from '../../Home/components/CTASection'
 
 
 const RoomSection = () => {
@@ -8,7 +9,7 @@ const RoomSection = () => {
     <div className="">
     <RoomSpecialOffer/>
     <OurRooms/>
-    {/* <CTASection/> */}
+    <CTASection/>
     </div>
   )
 }

@@ -9,6 +9,7 @@ import { IoMdClose } from "react-icons/io";
 import { RiHotelLine } from "react-icons/ri";
 import CheckAvailabilityBox from "./CheckAvailabilityBox";
 import Logo from "../../../components/Logo";
+import test from "../../../assets/test.jpg"
 
 
 
@@ -75,12 +76,12 @@ const Headers = () => {
       <div>
         {/* Sticky Header */}
         <nav
-          className={`fixed top-0 left-0 w-full flex items-center justify-between p-4 z-10 transition-all duration-500 ${
-            sticky || !currentHeaderContent.bgimage
-              ? "bg-primary"
-              : "bg-transparent"
-          }`}
-        >
+
+        className={`fixed top-0 left-0 w-full flex items-center justify-between p-4 z-10 transition-all duration-500 ${
+          sticky || !currentHeaderContent?.bgimage ? "bg-primary" : "bg-transparent" 
+        }`}
+      >
+        
           <Container className={"flex justify-between items-center px-7"}>
             <div className="text-white font-bold italic tracking-wide">
               <Link to="/" className="flex items-center gap-2">
@@ -107,20 +108,10 @@ const Headers = () => {
               </Link>
             </div>
 
-            {/* Mobile Menu Toggle Button */}
-            {/* <div className="lg:hidden">
-              <button
-                onClick={phoneToogleMenu}
-                className="text-white focus:ring-2 focus:ring-offset-2 focus:ring-primary menu-icon"
-                aria-label="Toggle Navigation"
-              >
-                <RxHamburgerMenu className="size-8 bg-primary-frame text-primary" />
-              </button>
-            </div> */}
             <div className="lg:hidden flex items-center space-x-4">
               <Link
                 to="/rooms"
-                className={`rounded-lg px-4 py-2 text-base md:px-6 md:py-3 md:text-sm shadow-md md:text-center ${
+                className={`rounded-lg px-2 py-1.5 text-[10px] md:px-6 md:py-3 md:text-sm shadow-md md:text-center ${
                   sticky
                     ? "bg-white text-primary hover:bg-gray-100"
                     : "bg-white text-primary hover:bg-primary-dark"
@@ -135,7 +126,7 @@ const Headers = () => {
                 className="text-white focus:ring-2 focus:ring-offset-2 focus:ring-primary menu-icon"
                 aria-label="Toggle Navigation"
               >
-                <RxHamburgerMenu className="text-2xl bg-primary-frame text-primary" />
+                <RxHamburgerMenu className="text-xl md:text-2xl bg-primary-frame text-primary" />
               </button>
 
               {/* Book Now Button */}
@@ -153,7 +144,7 @@ const Headers = () => {
 
             {/* Mobile Menu */}
             <ul
-              className={`fixed top-0 right-0 bg-secondary-card text-primary z-20 w-64 pt-16 h-full shadow-lg transform transition-transform ${
+              className={`fixed top-0 right-0 bg-secondary-card text-primary z-20 w-48 pt-8 h-full shadow-lg transform transition-transform ${
                 isMenuOpen ? "translate-x-0" : "translate-x-full"
               }`}
             >
@@ -169,12 +160,12 @@ const Headers = () => {
               {navLinks.map((link) => (
                 <li
                   key={link.label}
-                  className="block text-lg font-medium py-4 px-6 hover:bg-gray-700 hover:text-white flex items-center gap-2 transition duration-200"
+                  className="text-sm md:text-lg font-medium py-2 px-2 md:py-4 md:px-6 hover:bg-gray-700 hover:text-white flex items-center gap-2 transition duration-200"
                 >
-                  <RiHotelLine className="text-xl size-6" />
+                  <RiHotelLine className="text-lg" />
 
                   <Link
-                    className="text-primary"
+                    className="text-primary text-xs"
                     to={link.path}
                     onClick={closeMenuIcon}
                   >
@@ -189,21 +180,24 @@ const Headers = () => {
         {/* Background Section */}
         {currentHeaderContent && currentHeaderContent.bgimage && (
           <div
-            className="md:relative bg-cover bg-center bg-no-repeat md:h-[600px]"
+
+            className="md:relative md:bg-cover bg-center bg-no-repeat md:h-[400px] lg:h-[600px]"
+
             style={{
               backgroundImage: `url(${currentHeaderContent.bgimage})`,
-              
+              // height: "600px",
             }}
           >
             <div className="md:absolute "></div>
-            <div className="md:absolute bottom-24 lg:bottom-36 text-center w-full flex flex-col items-center space-y-4 px-6">
+            <div className="md:absolute bottom-24 w-full lg:bottom-36 text-center  flex flex-col items-center py-12 md:pt-0 md:space-y-4 px-6">
+
               {currentHeaderContent.title && (
-                <h3 className="text-white text-3xl lg:text-4xl font-normal font-caveat">
+                <h3 className="text-white text-sm md:text-3xl lg:text-4xl font-normal font-caveat">
                   {currentHeaderContent.title}
                 </h3>
               )}
               {currentHeaderContent.header && (
-                <h1 className="text-white text-4xl lg:text-5xl font-bold font-heading drop-shadow-md">
+                <h1 className="text-white text-md md:text-4xl lg:text-5xl font-bold font-heading drop-shadow-md">
                   {currentHeaderContent.header}
                 </h1>
               )}
@@ -219,7 +213,7 @@ const Headers = () => {
               )}
 
               {currentHeaderContent.paragraph && (
-                <p className="text-white text-lg lg:text-xl max-w-3xl">
+                <p className="text-white text-xs  md:w-full text-start md:text-center md:text-lg lg:text-xl max-w-3xl">
                   {currentHeaderContent.paragraph}
                 </p>
               )}

@@ -4,11 +4,13 @@ import { useLocation } from "react-router-dom";
 import RoomDetail from "../features/Rooms/pages/RoomDetail"
 
 const BookingDetailPage = lazy(() =>
-  import("../features/public/pages/BookingDetailPage")
+  import("../features/public/Booking/pages/BookingDetailPage")
 );
 const BookingCompletePage = lazy(() =>
-  import("../features/public/pages/BookingCompletePage")
+  import("../features/public/Booking/pages/BookingCompletePage")
 );
+
+import BlogDetailPage from "../features/public/pages/BlogDetailPage";
 
 const BookingPage = lazy(() => import("../features/auth/pages/BookingPage"));
 const BlogPage = lazy(() => import("../features/public/pages/BlogPage"));
@@ -79,6 +81,14 @@ const publicRoute = [
     element: (
       <Suspense fallback={<PageLoading />}>
         <BlogPage />
+      </Suspense>
+    ),
+  },
+  {
+    path: "blog-details",
+    element: (
+      <Suspense fallback={<PageLoading />}>
+        <BlogDetailPage />
       </Suspense>
     ),
   },

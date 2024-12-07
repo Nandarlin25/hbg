@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import vector from '../../../assets/Room/Booking Detail/icons/vector.png'
 import 'flowbite';
 import Container from '../../../components/Container'
+import { Link } from 'react-router-dom';
 
 
 
@@ -147,7 +148,12 @@ const BookRoom = () => {
                 </div> 
               </div> 
             </div>
-            <button className="lg:w-[400px] md:w-[200px] rounded-md bg-black text-white w-[332px] lg:text-[20px] md:text-[12px] text-[12px] lg:py-4 md:py-2  lg:h-[56px] md:h-[32px] h-[32px]  hover:bg-gray-800 transition-colors"> BOOK NOW </button>
+            <div>
+            <Link to="/rooms/room-details/booking-details" className="text-[16px] md:text-[12px] mt-10 md:w-full lg:text-xl font-body text-primary-frame bg-primary px-8 py-2  rounded-md">
+        Book Now
+      </Link>
+            </div>
+            {/* <Link to="/rooms/room-details/booking-details" className=" w-full rounded-md bg-black text-white  lg:text-[20px] md:text-[12px] text-[12px] lg:py-4 md:py-2  lg:h-[56px] md:h-[32px] h-[32px]  hover:bg-gray-800 transition-colors"> BOOK NOW </Link> */}
           </div>
         </div>
       </div>
