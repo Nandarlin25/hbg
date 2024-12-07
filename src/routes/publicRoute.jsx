@@ -30,7 +30,7 @@ const AboutUsPage = lazy(() => import("../features/public/pages/AboutUsPage"));
 const ContactUsPage = lazy(() =>
   import("../features/public/pages/ContactUsPage")
 );
-const HomePage = lazy(() => import("../features/public/pages/HomePage"));
+const HomePage = lazy(() => import("../features/public/Home/page/HomePage"));
 
 // useLocation should be inside a component if you want to use it for logic
 const publicRoute = [

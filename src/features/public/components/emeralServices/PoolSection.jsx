@@ -1,11 +1,11 @@
 import React from "react";
-import image1 from "../../../../assets/Service/Pool Swimming/2.jpg";
-import image2 from "../../../../assets/Service/Pool Swimming/1.jpg";
+import image1 from "../../../../assets/Service/Pool Swimming/Pool.png";
+import image2 from "../../../../assets/Service/Pool Swimming/Pool_service.png";
 import { IoCheckmarkOutline } from "react-icons/io5";
 const PoolSection = () => {
   return (
     <section className=" mx-auto  py-8">
-      <div className="grid lg:grid-cols-2 gap-8 items-center">
+      <div className="grid lg:grid-cols-2 gap-8 items-center md:mb-6">
         {/* Image Section */}
         <div className="relative w-full max-w-[589px] h-[400px] mx-auto hover:scale-105 overflow-hidden hover:shadow-sm transition-transform">
           <img
@@ -51,33 +51,31 @@ const PoolSection = () => {
         </div>
       </div>
 
-      <div className="pt-16">
-        <div className="grid lg:grid-cols-2 gap-8 items-center">
-          {/* Text Section */}
-          <div className="relative w-full max-w-[589px] h-[400px] mx-auto">
-            {/* Title */}
-            <h2 className="text-5xl font-bold font-heading text-primary leading-10 mt-2 mb-6">
-              Relax and Refresh at Our Swimming Pool
-            </h2>
+      <div className="grid lg:grid-cols-2 gap-8 md:gap-4 items-center">
+        {/* Text Section */}
+        <div className="relative w-full max-w-[589px] h-[400px] md:h-[300px] mx-auto">
+          {/* Title */}
+          <h2 className="text-4xl font-bold font-heading w-[400px] text-primary leading-10 mt-2 mb-6">
+            Relax and Refresh at Our Swimming Pool
+          </h2>
 
-            {/* Description */}
-            <p className="text-2xl font-heading font-normal leading-8 text-secondary mt-2 mb-6">
-              Take a refreshing dip in our swimming pool, an inviting oasis
-              designed for relaxation and enjoyment. 
-            </p>
-            <p className="text-2xl font-heading font-normal leading-8 text-secondary">
-              Take a refreshing dip in our swimming pool, an inviting oasis
-              designed for relaxation and enjoyment. 
-            </p>
-          </div>
-          {/* Image Section */}
-          <div className="relative w-full max-w-[589px] h-[400px] mx-auto  hover:scale-105 overflow-hidden hover:shadow-sm transition-transform">
-            <img
-              src={image2}
-              alt="Luxury buffet station"
-              className="rounded-lg w-full h-full object-cover"
-            />
-          </div>
+          {/* Description */}
+          <p className="text-2xl font-heading font-normal leading-8 text-secondary mt-2 mb-6">
+            Take a refreshing dip in our swimming pool, an inviting oasis
+            designed for relaxation and enjoyment. 
+          </p>
+          <p className="text-2xl font-heading font-normal leading-8 text-secondary">
+            Take a refreshing dip in our swimming pool, an inviting oasis
+            designed for relaxation and enjoyment. 
+          </p>
+        </div>
+        {/* Image Section */}
+        <div className="relative w-full max-w-[589px] h-[400px]  mx-auto hover:scale-105 overflow-hidden hover:shadow-sm transition-transform ">
+          <img
+            src={image2}
+            alt="Luxury buffet station"
+            className="rounded-lg w-full h-full object-cover"
+          />
         </div>
       </div>
     </section>

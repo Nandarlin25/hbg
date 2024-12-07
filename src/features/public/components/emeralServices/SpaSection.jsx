@@ -1,5 +1,5 @@
 import React from 'react';
-import image1 from "../../../../assets/Service/Spa & Wellness/first photo.jpeg"
+import image1 from "../../../../assets/Service/Spa & Wellness/first photo.jpeg";
 import { IoCheckmarkOutline } from "react-icons/io5";
 import TherapiesAndMassage from './TherapiesAndMassage';
 const SpaSection = () => {
