@@ -40,7 +40,7 @@ const Headers = () => {
   useEffect(() => {
     // Set up scroll listener
     window.addEventListener("scroll", handleScroll);
-
+  
     // Cleanup on unmount
     return () => {
       window.removeEventListener("scroll", handleScroll);
