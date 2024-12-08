@@ -218,11 +218,11 @@ const AboutUsIntro = () => {
               What they says about us...
             </h1>
             <div className="text-star-solid flex justify-center items-center gap-3 mb-3">
-              <i className="fa-solid fa-star text-xl"></i>
-              <i className="fa-solid fa-star text-xl"></i>
-              <i className="fa-solid fa-star text-xl"></i>
-              <i className="fa-solid fa-star text-xl"></i>
-              <i className="fa-solid fa-star text-xl"></i>
+              <i class="fa-solid fa-star text-xl"></i>
+              <i class="fa-solid fa-star text-xl"></i>
+              <i class="fa-solid fa-star text-xl"></i>
+              <i class="fa-solid fa-star text-xl"></i>
+              <i class="fa-solid fa-star text-xl"></i>
             </div>
 
             {/* Carousel Section */}
